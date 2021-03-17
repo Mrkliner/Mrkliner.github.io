@@ -9,4 +9,4 @@
 <p>In this paragraph, you will see commands for the game, but not all.</p>
 <p>In order to find out all the commands, click on the button at the very bottom.</p>
 <p>Press V on the keyboard. And you see commandlinebar</p>
-<img scr="https://mrkliner.github.io/Screen_17_03_21.20_29_08.png" width="189" height="255"></img>
+<img scr="https://mrkliner.github.io/Screen_17_03_21.20_29_08.png" width="189" height="255">
