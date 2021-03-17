@@ -17,9 +17,9 @@
 <div>
   <button>Buy game</button>
   <script type="text/javascript">
-    Money -= 0
+    Money -= 10
     if (Money == 0){
-    <h1>Money out of stock!</h1>
+    <h1>Money out of stock</h1>
     }
   </script>
 </div>
