@@ -1,3 +1,1 @@
-<?php
-
-?>
+<div style="background:url(https://2ip.ru/images/av/1.gif) no-repeat left top;width:239px;height:143px;overflow:hidden"><div style="margin-top:65px;margin-left:10px"><form name="antivirus2ipForm1" action="https://2ip.ru/antivirus/" method="POST" enctype="multipart/form-data"><input type="file" name="file" size="14"/><div style="margin-top:20px;color:#fff;cursor:pointer;font-size:12px" onclick="document.forms['antivirus2ipForm1'].submit()">Проверить</div></form></div></div>
