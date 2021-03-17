@@ -7,5 +7,5 @@
 <h1>
 <h1>
 <div>
-  <button><a href = "https://Mrkliner.github.io/Regist.md">Register
+  <button><a href = "https://Mrkliner.github.io/Regist">Register
 
