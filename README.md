@@ -7,23 +7,23 @@
 <h1>
 <h1>
  <!-- Button to open the modal -->
-<button onclick="document.getElementById('id01').style.display='block'">Sign Up</button>
+<button onclick="document.getElementById('id01').style.display='block'">Sign Up
 
 <!-- The Modal (contains the Sign Up form) -->
 <div id="id01" class="modal">
-  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">times;</span>
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">times;
   <form class="modal-content" action="/action_page.php">
     <div class="container">
-      <h1>Sign Up</h1>
-      <p>Please fill in this form to create an account.</p>
+      <h1>Sign Up
+      <p>Please fill in this form to create an account.
       <hr>
-      <label for="email"><b>Email</b></label>
+      <label for="email"><b>Email
       <input type="text" placeholder="Enter Email" name="email" required>
 
-   <label for="psw"><b>Password</b></label>
+   <label for="psw"><b>Password
       <input type="password" placeholder="Enter Password" name="psw" required>
 
-   <label for="psw-repeat"><b>Repeat Password</b></label>
+   <label for="psw-repeat"><b>Repeat Password
       <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
 
    <label>
@@ -32,8 +32,8 @@
    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy
 
    <div class="clearfix">
-        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-        <button type="submit" class="signup">Sign Up</button>
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel
+        <button type="submit" class="signup">Sign Up
   <!-- Button to open the modal login form -->
 <button onclick="document.getElementById('id01').style.display='block'">Login</button>
 
@@ -46,24 +46,20 @@ class="close" title="Close Modal">&times;</span>
   <form class="modal-content animate" action="/action_page.php">
     <div class="imgcontainer">
       <img src="img_avatar2.png" alt="Avatar" class="avatar">
-    </div>
 
   <div class="container">
-      <label for="uname"><b>Username</b></label>
+      <label for="uname"><b>Username
       <input type="text" placeholder="Enter Username" name="uname" required>
 
-   <label for="psw"><b>Password</b></label>
+   <label for="psw"><b>Password
       <input type="password" placeholder="Enter Password" name="psw" required>
 
-   <button type="submit">Login</button>
+   <button type="submit">Login
    <label>
        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
-    </div>
+
 
    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
-  </form>
-</div> 
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel
+      <span class="psw">Forgot <a href="#">password?
+
