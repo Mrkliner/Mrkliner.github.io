@@ -1,2 +1,2 @@
-<button><a href="">Play demo!</button>
+<button><a href="">Play demo!
 
