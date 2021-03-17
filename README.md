@@ -1,3 +1,4 @@
+<title>Buy game.com</title>
 <h1>                   Buy game page</h1>
 <select>
   <option>Standart</option>
