@@ -1,1 +1,18 @@
-<div style="background:url(https://2ip.ru/images/av/1.gif) no-repeat left top;width:239px;height:143px;overflow:hidden"><div style="margin-top:65px;margin-left:10px"><form name="antivirus2ipForm1" action="https://2ip.ru/antivirus/" method="POST" enctype="multipart/form-data"><input type="file" name="file" size="14"/><div style="margin-top:20px;color:#fff;cursor:pointer;font-size:12px" onclick="document.forms['antivirus2ipForm1'].submit()">Проверить</div></form></div></div>
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Тег FORM</title>
+ </head>
+ <body>
+
+ <form action="handler.php">
+  <p><b>Как по вашему мнению расшифровывается аббревиатура &quot;ОС&quot;?</b></p>
+  <p><input type="radio" name="answer" value="a1">Офицерский состав<Br>
+  <input type="radio" name="answer" value="a2">Операционная система<Br>
+  <input type="radio" name="answer" value="a3">Большой полосатый мух</p>
+  <p><input type="submit"></p>
+ </form>
+
+ </body>
+</html>
