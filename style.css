@@ -1,3 +1,6 @@
-p {
- color red;
+body {
+ font-family: Tahoma;
+ font-size 11pt
+  background-color: #f0f0f0;
+ color: #333;
 }
