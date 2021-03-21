@@ -1,15 +1,20 @@
 body {
  font-family: Tahoma;
- font-size 11pt
+ font-size: 11pt
  color: #808080;
  color: #333;
 }
 h1 {
   color: #a52a2a; /* Цвет заголовка */
   font-size: 24pt; /* Размер шрифта в пунктах */
-  font-family: Georgia, Times, serif; /* Семейство шрифтов */
+  font-family: Tahoma; /* Семейство шрифтов */
   font-weight: normal; /* Нормальное начертание текста  */
 }
 h3 {
  color: #0000ff;
+ font-weight: normal;
+ font-size: 24pt
+}
+hr {
+ color: #ffa500;
 }
