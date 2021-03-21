@@ -1,6 +1,8 @@
 <h3>Если вы ищете информацию "Как сощздать сервер в майнкрафт бесплатно" то эта статья для вас!
   И если вы хотите сделать сервер с донатом то эта статья НЕ для вас!
 </h3>
+<link href="style.css" rel="stylesheet" type="text/css">
+<p>Внимание все файлы без вирусов!</p>
 <h1>Хостинги (платные, бесплатные)</h1>
 <h3>Начём с бесплатных хостингов. P.S Я не знаю не одного платного кроме Exatron</h3>
 <h3>Бесплатный хостин Aternos.org - это бесплатный хостинг без СМС, но с регистрацией.
@@ -31,11 +33,9 @@
 <h3>Подведем итоги.
   Лучше из всех выше перечисленных хостингов, программ и всего прочего оказался Aternos.org он самый удобный и самы лёгкий в исаользовании.</h3>
 <h1>Ссылки</h1>
-<link href="style.css" rel="stylesheet" type="text/css">
-<p>Внимание все файлы без вирусов!</p>
-<h3><a href="https://drive.google.com/file/d/1yOoEdQ5iDHbEOUx1dsQlNrR7KeS8Pfse/view?usp=sharing">MCoffline</h3>
-<h3><a href="https://mrkliner.github.io/hamachi.msi">Хамачи</h3>
-<h3><a href="https://mrkliner.github.io/langamepp_3.4_setup.exe">LanGame++</h3>
-<h3><a href="https://mrkliner.github.io/Radmin_VPN_1.1.4287.9.exe">RadminVPN</h3>
-<h3><a href="https://aternos.org">Атернос(Aternos.org)</h3>
+<h3><a href="https://drive.google.com/file/d/1yOoEdQ5iDHbEOUx1dsQlNrR7KeS8Pfse/view?usp=sharing">MCoffline
+<h3><a href="https://mrkliner.github.io/hamachi.msi">Хамачи
+<h3><a href="https://mrkliner.github.io/langamepp_3.4_setup.exe">LanGame++
+<h3><a href="https://mrkliner.github.io/Radmin_VPN_1.1.4287.9.exe">RadminVPN
+<h3><a href="https://aternos.org">Атернос(Aternos.org)
 
