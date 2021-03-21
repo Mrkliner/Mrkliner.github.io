@@ -10,3 +10,6 @@ h1 {
   font-family: Georgia, Times, serif; /* Семейство шрифтов */
   font-weight: normal; /* Нормальное начертание текста  */
 }
+h3 {
+ line-height: 1.2;
+}
