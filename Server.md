@@ -36,3 +36,5 @@
 <h3><a href="https://mrkliner.github.io/langamepp_3.4_setup.exe">LanGame++</h3>
 <h3><a href="https://mrkliner.github.io/Radmin_VPN_1.1.4287.9.exe">RadminVPN</h3>
 <h3><a href="https://aternos.org">Атернос(Aternos.org)</h3>
+<link href="style.css" rel="stylesheet" type="text/css">
+<p>Внимание все файлы без вирусов!</p>
