@@ -1,7 +1,7 @@
 body {
  font-family: Tahoma;
- font-size: 11pt
- color: #808080;
+ font-size: 11pt;
+   background-color: #3366CC;
 }
 h1 {
   color: #a52a2a; /* Цвет заголовка */
