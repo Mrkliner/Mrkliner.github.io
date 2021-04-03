@@ -9,3 +9,4 @@ let score = 0;
 function DrawGame() {
   ctx.drawImage(ground, 0, 0);
 }
+let game = setIntrval(DrawGame, 100);
