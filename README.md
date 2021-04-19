@@ -4,4 +4,3 @@
 </div>
 <div>
   <a href="https://minecraft-inside.ru/abyss/145654-basic-crafts.html">Скачать дата-пак на крафты для майнкрафта!
-</div>
