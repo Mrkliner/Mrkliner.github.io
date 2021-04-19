@@ -59,3 +59,14 @@ Console.Write(I);
 if (i == "abc") {
 	Console.WriteLine("abcde")
 }
+______________________________________________________________________________________________________________________________________________________________________
+Синтаксис С++:
+#include <iostream>
+using namespace std;
+int main() {
+int i;
+string i1;
+cout << ""<<endl;
+cin >> i;
+return 0;
+}
