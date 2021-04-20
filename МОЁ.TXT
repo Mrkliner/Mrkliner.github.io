@@ -70,3 +70,10 @@ cout << ""<<endl;
 cin >> i;
 return 0;
 }
+___________________________________________________________________________________________________________________________________________________________________________
+Мои: команды:
+Зелье с гипер плохими эфектами: /give @p minecraft:splash_potion 1 0 {CustomPotionEffects:[{Id:2,Amplifier:6,Duration:2147483647},{Id:4,Amplifier:2,Duration:2147483647},{Id:7,Amplifier:3},{Id:9,Duration:2147483647},{Id:15,Duration:2147483647},{Id:16,Duration:2147483647},{Id:17,Amplifier:6,Duration:2147483647},{Id:18,Amplifier:2,Duration:2147483647},{Id:20,Amplifier:2,Duration:2147483647},{Id:27,Amplifier:4,Duration:2147483647},{Id:31,Duration:2147483647}],CustomPotionColor:0,display:{Name:"Яд нейропоролитический"}}
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Для 1.13 <
+/give @p minecraft:splash_potion{CustomPotionEffects:[{Id:2,Amplifier:6,Duration:2147483647},{Id:4,Amplifier:2,Duration:2147483647},{Id:7,Amplifier:3},{Id:9,Duration:2147483647},{Id:15,Duration:2147483647},{Id:16,Duration:2147483647},{Id:17,Amplifier:6,Duration:2147483647},{Id:18,Amplifier:2,Duration:2147483647},{Id:20,Amplifier:2,Duration:2147483647},{Id:27,Amplifier:4,Duration:2147483647},{Id:31,Duration:2147483647}],CustomPotionColor:0,display:{Name:"\"Яд нейропоролитический\""}}
+______________________________________________________________________________________________________________________________________________________________________________
