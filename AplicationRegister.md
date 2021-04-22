@@ -13,12 +13,9 @@
    <label for="psw-repeat"><b>Repeat Password</b></label>
    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
    <hr>
-
-   <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-   <button type="submit" class="registerbtn">Register
    <p>If you registred you may skip this</p>
-  </div>
-
+   <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+   <button type="submit" class="registerbtn">Registester
   <div class="container signin">
   </div>
 </form> 
