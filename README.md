@@ -6,7 +6,8 @@
   <a href="https://minecraft-inside.ru/abyss/145654-basic-crafts.html">Скачать дата-пак на крафты для майнкрафта!
    <style>
      body{
-         background-color: #3366CC; /* Цвет фона веб-страницы */
+         background-color: #AFEEEE; /* Цвет фона веб-страницы */
+         color: #00CED1;
      } 
    </style>
    
