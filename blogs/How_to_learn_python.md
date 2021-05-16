@@ -24,5 +24,5 @@
 </p>
 <h1>Глава 3 (Заключение) - Литература</h1>
 <a>Презентация</a>
-<a href="mrkliner.github.io/blogs/programming_on_python.pptx></a>
+<a>mrkliner.github.io/blogs/programming_on_python.pptx</a>
  
