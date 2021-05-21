@@ -7,7 +7,7 @@
 <h3>
   up - jump</h3><h3>
   left - moving left</h3><h3>
-  right - moving right</h3>
+  right - moving right</h3><h3>
   P - about game</h3><h3>
   1 - to change your skin into yellow ball</h3><h3>
   2 - to change your skin into green ball</h3><h3>
