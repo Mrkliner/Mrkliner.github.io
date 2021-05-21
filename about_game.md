@@ -6,8 +6,8 @@
 <hr>
 <h1>HotKeys</h1>
 <h3>
-  up - jump
-  left - moving left
+  up - jump</h3><h3>
+  left - moving left</h3>
   right - moving right
   P - about game
   1 - to change your skin into yellow ball
