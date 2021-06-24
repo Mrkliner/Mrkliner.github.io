@@ -8,7 +8,8 @@
 в консоле Windows. Так же на нашем сайте есть блоги которые помогут вам в создание сервера по майнкрафт. Скоро мы добавим библиотеки питона
 и с++. Так же у меня есть свой ютуб канал вот ссылка https://www.youtube.com/channel/UCdAEk92Dp2udmRkaUblyoCg</h3>
 <h1 style="font-family: Tahoma; color: lime;">Полезные ссылки</h1>
-<a href="https://mrkliner.github.io/HowBlog">Как создать блог
-<a href="https://mrkliner.github.io/HTML_editor.exe">Редактор HTML кода
+<a href="https://mrkliner.github.io/HowBlog">Как создать блог</a>
+<a href="https://mrkliner.github.io/HTML_editor.exe">Редактор HTML кода</a>
+<hr></hr>
 <h1>Оцените нас</h1>
   <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfYhZtvoozza3BowV75KlwyliluJbITqWYqUV-OuA6ylcdC6A/viewform?embedded=true" width="640" height="1145" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
