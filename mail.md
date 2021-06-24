@@ -1,7 +1,7 @@
 <?php
 bool mail ( string to, string subject, string message [, string additional_headers [, string additional_parameters]])
-$to  = "<mail@example.com>, " ; 
-$to .= "mail2@example.com>"; 
+$to  = "<agarrismodov@gmail.com>, " ; 
+$to .= "agarrismodov@gmail.com>"; 
 
 $subject = "Заголовок письма"; 
 
