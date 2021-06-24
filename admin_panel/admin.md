@@ -27,4 +27,4 @@
   }
 </script>
 <input type="text" id="user">
-<input type="button" value="проверить пользователя по базе" oneclick="Main()">
+<p><input type="button" value="проверить пользователя по базе" oneclick="Main()"></p>
