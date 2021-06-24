@@ -4,6 +4,7 @@
   var b;
   var user1 = document.getElementById("user").value;
   function Main() {
+    bSet();
     if (user1 != "") {
       if (b == 1) {
         alert ("Пользователь найден!");
