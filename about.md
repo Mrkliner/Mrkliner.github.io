@@ -7,6 +7,7 @@
 Большая прозьба помогите проекту - поисковыми запросами или фантомной активностью черз комманду ping https://mrkliner.github.io/#gsc.tab=0
 в консоле Windows. Так же на нашем сайте есть блоги которые помогут вам в создание сервера по майнкрафт. Скоро мы добавим библиотеки питона
 и с++. Так же у меня есть свой ютуб канал вот ссылка https://www.youtube.com/channel/UCdAEk92Dp2udmRkaUblyoCg</h3>
+<a href="https://mrkliner.github.io/Blog/privat_polici">Политика конфедициальности</a>
 <h1 style="font-family: Tahoma; color: lime;">Полезные ссылки</h1>
 <a href="https://mrkliner.github.io/HowBlog">Как создать блог</a>
 <a href="https://mrkliner.github.io/HTML_editor.exe">Редактор HTML кода</a>
