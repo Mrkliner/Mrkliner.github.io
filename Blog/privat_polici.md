@@ -1,6 +1,6 @@
 <style>
   body {
-    background-color: #FA8072;
+    background-color: #696969;
   }
   h3 {
     color: #32CD32;
