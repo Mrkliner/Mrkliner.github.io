@@ -20,4 +20,4 @@
 <h1>Защита ваших прав</h1>
 <hr>
 <h3>Мы очень не рекомендуем вам размещать вашу личную или откровенную информацию о себе</h3>
-<a href="https://mrkliner.github.io">На Mrkliner search</a>
+<h2><a href="https://mrkliner.github.io">На Mrkliner search</a></h2>
