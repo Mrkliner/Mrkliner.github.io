@@ -9,4 +9,5 @@
   Ctrl + A - выделение текста.
   Ctrl + C - копирование текста.
   Ctrl + V - вставка текста.
+  <a href="https://mrkliner.github.io/Blog/privat_polici">Политика конфедициальности</a>
   Скачать HTML editor - <a href="https://mrkliner.github.io/HTML_editor.exe">Скачать
