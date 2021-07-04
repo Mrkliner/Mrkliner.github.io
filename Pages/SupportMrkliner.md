@@ -10,3 +10,4 @@
 <hr>
 <h2>---Полезные ссылки---</h2>
 <a href="https://mrkliner.github.io/Blog/privat_polici">политикa конфедициальности</a>
+<a href="https://mrkliner.github.io/HowBlog">Как создать блог на нашей платформе (вместе с правилами)</a>
