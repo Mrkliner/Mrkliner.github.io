@@ -6,4 +6,4 @@
 <h4><a href="mrkliner.github.io">Back to the main page</a></h3>
 <hr>
 <h3>Вот так будет выглядеть ваша странница 404</h3>
-<h5><a href="mrkliner.github.io/Pages/404/code.htm">Скачать код странницы</a></h5>
+<h5><a href="mrkliner.github.io/Pages/404/code.html">Скачать код странницы</a></h5>
