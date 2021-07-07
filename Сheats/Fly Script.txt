@@ -1,0 +1,3 @@
+-- Press "E" to fly and unfly
+-- You have to re-apply the script if you die
+loadstring(game:HttpGet("https://pastebin.com/raw/phV2U4rU", true))()

@@ -1,0 +1,7 @@
+local amt = -9e9 --change it if u want
+
+local leaderstats = game:GetService("Players").LocalPlayer.leaderstats
+local event = game:GetService("ReplicatedStorage").RemoteEvents.BuyEvent
+event:FireServer(leaderstats.Gems, amt)
+event:FireServer(leaderstats.Trophies, amt)
+event:FireServer(leaderstats.Tokens, amt)
