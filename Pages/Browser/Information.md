@@ -1,4 +1,4 @@
-<h3 id="Main"></h3>
+<h3 id="Main">| <a href="https://mrkliner.github.io/Pages/Browser/Download">Загрузить</a></h3>
 <style>
   h1 {
     color: #733636;
@@ -10,8 +10,8 @@
     color : #430791;
   }
   h3#Main {
-    background-color: #6937d4;
-    color: #f70c53cd;
+    background-color: a2fa14;
+    color: #51fa14;
   }
 </style>
 <h1>Что такое mrkliner browser</h1>
