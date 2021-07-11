@@ -11,7 +11,7 @@
   }
   h3#Main {
     background-color: #6937d4;
-    color: f70c53cd;
+    color: #f70c53cd;
   }
 </style>
 <h1>Что такое mrkliner browser</h1>
