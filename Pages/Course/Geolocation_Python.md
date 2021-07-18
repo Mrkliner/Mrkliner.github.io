@@ -1,6 +1,6 @@
 <h1>Как узнать гео-локацию стройства на python по ip (полный курс)</h1>
 <h3>Для этого нам понадобится:</h3>
-<ul><li>Python</li><li>Библиотека для python geocoder</li><li>Желание</li><li>Базовые навыки Python</li></ul>
+<h3><ul><li>Python</li><li>Библиотека для python geocoder</li><li>Желание</li><li>Базовые навыки Python</li></ul></h3>
 <h3>Да, да это всё что нам нужно, давайте установим библиотеку geocoder - сделать это можно вот так:</h3>
 <h3><code>pip install geocoder</code></h3>
 <h2>Пишем программу</h2>
