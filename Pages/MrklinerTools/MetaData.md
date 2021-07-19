@@ -11,5 +11,5 @@ body {
 <h1>Чтение метаданных файла</h1>
 <input type="file" id="file-uploader">
 <p id="feedback"></p>
-<script type="text/javascript">
+<script type="text/javascript" scr="https://mrkliner.github.io/Pages/MrklinerTools/Meta.js">
 </script>
