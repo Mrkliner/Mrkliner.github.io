@@ -8,10 +8,10 @@ body {
   color: #FFFFFF;
 }
 </style>
-
 <h1>Чтение метаданных файла</h1>
 <input type="file" id="file-uploader">
-<script>
+<p id="feedback"></p>
+<script type="text/javascript">
   const fileUploader = document.getElementById('file-uploader');
 
 fileUploader.addEventListener('change', (event) => {
@@ -36,4 +36,3 @@ fileUploader.addEventListener('change', (event) => {
 });
 
 </script>
-<p id="feedback"></p>
