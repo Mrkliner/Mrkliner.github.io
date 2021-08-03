@@ -15,7 +15,7 @@
 <div>
       <?php
             $Likes = 0;
-            echo '<h3>Лайков: ' + $i + '</h3>'
+            echo '<h3>Лайков: ' + $i + '</h3>';
       ?>
       <button>Like</button>
 </div>
