@@ -14,7 +14,6 @@
 </div>
 <div>
       <strong><h3 class="me-3 py-2">Пару ссылок на программы:</h3></strong>
-      <strong><h3><a href="https://mrkliner.github.io/Pages/Programs/">Отследить местоположение человека по айпи</a></h3></strong>
-      <strong><h3><a href="https://mrkliner.github.io/Pages/Programs/">Easy консоль (на русском, с поддержкой отследжевания местоположения человека и по айпи)</a></h3></strong>
-      
+      <strong><h3><a href="https://mrkliner.github.io/Pages/Programs/geo.exe">Отследить местоположение человека по айпи</a></h3></strong>
+      <strong><h3><a href="https://mrkliner.github.io/Pages/Programs/Russian_console.exe">Easy консоль (на русском, с поддержкой отследжевания местоположения человека и по айпи)</a></h3></strong>
 </div>
