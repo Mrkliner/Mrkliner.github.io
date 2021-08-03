@@ -13,9 +13,8 @@
       </nav>
 </div>
 <div>
-      <?php
-            $Likes = 0;
-            echo '<h3>Лайков: ' + $i + '</h3>';
-      ?>
-      <button>Like</button>
+      <strong><h3 class="me-3 py-2">Пару ссылок на программы:</h3></strong>
+      <strong><h3><a href="https://mrkliner.github.io/Pages/Programs/">Отследить местоположение человека по айпи</a></h3></strong>
+      <strong><h3><a href="https://mrkliner.github.io/Pages/Programs/">Easy консоль (на русском, с поддержкой отследжевания местоположения человека и по айпи)</a></h3></strong>
+      
 </div>
