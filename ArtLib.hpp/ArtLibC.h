@@ -22,7 +22,7 @@ typedef char Mbuttons;
 int PrntText (char Text[])
 {
 	printf ("%s", Text);
-}	
+}
 int PrintTextLine (char TextLine[])
 {
 	printf ("%s\n", TextLine);
@@ -81,14 +81,14 @@ int MBoxI(char Caption[], char Text[], Mbuttons Button)
 	}
 	if (Button == B_OK_B_CANCLE)
 	{
-		MessageBox (0, Text, Caption, MB_OKCANCLE | MB_ICONINFORMATION);
+		MessageBox (0, Text, Caption, MB_OKCANCEL | MB_ICONINFORMATION);
 	}
 	if (Button == B_YES_B_NO)
 	{
 		MessageBox (0, Text, Caption, MB_YESNO | MB_ICONINFORMATION);
 	}
 }
-int MBoxW (char Caption[], char Text[], Mbuttonts Button)
+int MBoxW (char Caption[], char Text[], Mbuttons Button)
 {
 	if (Button == B_OK)
 	{
@@ -96,10 +96,10 @@ int MBoxW (char Caption[], char Text[], Mbuttonts Button)
 	}
 	if (Button == B_OK_B_CANCLE)
 	{
-		MessageBox (0, Text, Caption, MB_OK_CANCLE | MB_ICONWARNING);
+		MessageBox (0, Text, Caption, MB_OKCANCEL | MB_ICONWARNING);
 	}
 	if (Button == B_YES_B_NO)
 	{
-		MessageBox (0, Text, Caption, MB_YES_NO | MB_ICONWARNING);
+		MessageBox (0, Text, Caption, MB_YESNO | MB_ICONWARNING);
 	}
 }
