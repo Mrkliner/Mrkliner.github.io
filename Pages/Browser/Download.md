@@ -13,6 +13,11 @@
     background-color: a2fa14;
     color: #51fa14;
   }
+  h3#warning {
+      color: #edd70e;
+  }
 </style>
+<h3 id="warning">Файл не содержит вирусного ПО, Антивирус отключать не нужно!</h3>
+<hr>
 <h1>Загрузить</h1>
-<h3><a href="https://mrkliner.github.io/Pages/Programs/MrklinerBrowser.exe">Скачать!</a></h3>
+<h3><a href="https://mrkliner.github.io/Pages/Programs/Mrkliner_Browser.exe">Скачать!</a></h3>
