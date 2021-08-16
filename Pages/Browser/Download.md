@@ -1,13 +1,13 @@
 <h3 id="Main">| <a href="https://mrkliner.github.io/Pages/Browser/Information">Информация</a> | <a href="https://mrkliner.github.io/about">О нас</a></h3>
 <style>
   h1 {
-    color: #733636;
+    color: 0c12b0;
   }
   body {
     background-color: #88bdad;
   }
   h3 {
-    color : #430791;
+    color : #065205;
   }
   h3#Main {
     background-color: a2fa14;
@@ -16,23 +16,20 @@
   h3#warning {
     color: #edd70e;
   }
-  h1#sovet {
-    color: #f74d6c;
-  }
   h3#sovet_one {
-    color: #1bcbf2;
+    color: #065205;
   }
   h3#sovet_two {
-    color: #1bf2d9;
+    color: #053b52;
   }
   h3#sovet_three {
-    color: #1bf2b2;
+    color: #053b52;
   }
 </style>
 <hr>
 <h3 id="warning">Файл не содержит вирусного ПО, Антивирус отключать не нужно!</h3>
 <hr>
-<h1 id="sovet">Советы по использованию</h1>
+<h1>Советы по использованию</h1>
 <h3 id="sovet_one">Скачайте файл "msvcr71.dll" для более быстрой работы</h3>
 <h3 id="sovet_two">Для корректной работы используйте yandex или mrkliner search</h3>
 <h3 id="sovet_three">Если смотрите видео на you-tube, то не разворачивайте видео на весь экран (Будет не корректно работать)</h3>
