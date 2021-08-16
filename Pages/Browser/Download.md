@@ -1,4 +1,4 @@
-<h3 id="Main">| <a href="https://mrkliner.github.io/Pages/Browser/Inforamtion">Информация</a> | <a href="https://mrkliner.github.io/about">О нас</a></h3>
+<h3 id="Main">| <a href="https://mrkliner.github.io/Pages/Browser/Information">Информация</a> | <a href="https://mrkliner.github.io/about">О нас</a></h3>
 <style>
   h1 {
     color: #733636;
