@@ -25,6 +25,9 @@
   h3#sovet_three {
     color: #053b52;
   }
+  hr {
+    background-color: #fa0707;
+  }
 </style>
 <hr>
 <h3 id="warning">Файл не содержит вирусного ПО, Антивирус отключать не нужно!</h3>
