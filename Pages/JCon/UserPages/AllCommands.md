@@ -1,5 +1,5 @@
 <p><h4>hlp и help</h4></p>
-<h4><p>echo и echoLine</h4></p>
+<h4><p>echo текст и echoLine текст</h4></p>
 <h4><p>inf</h4></p>
 <h4><p>help /all</h4></p>
 <h4><p>time кол-во секунд</h4></p>
