@@ -12,5 +12,18 @@
 <a href="https://mrkliner.github.io/HowBlog">Как создать блог</a>
 <a href="https://mrkliner.github.io/HTML_editor.exe">Редактор HTML кода</a>
 <hr>
-<h1>Оцените нас</h1>
+<h1>Оцените нас (Нужна GMail почта)</h1>
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfYhZtvoozza3BowV75KlwyliluJbITqWYqUV-OuA6ylcdC6A/viewform?embedded=true" width="640" height="1145" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
+<h1>Альтернативная оценка через VK</h1>
+<!-- Put this script tag to the <head> of your page -->
+<script type="text/javascript" src="https://vk.com/js/api/openapi.js?169"></script>
+
+<script type="text/javascript">
+  VK.init({apiId: API_ID, onlyWidgets: true});
+</script>
+
+<!-- Put this div tag to the place, where the Like block will be -->
+<div id="vk_like"></div>
+<script type="text/javascript">
+VK.Widgets.Like("vk_like", {type: "button"});
+</script>
