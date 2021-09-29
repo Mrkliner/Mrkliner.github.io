@@ -1,0 +1,967 @@
+-- Jailbreaker V1.2
+local plr = game:GetService("Players").LocalPlayer
+
+
+local TpMethod = 2
+
+
+
+ function JailbreakTp(...)
+	getfenv()["TpMethod" .. TpMethod](...)
+end
+
+function TpMethod1(...)
+	local char = plr.Character
+	local root = char.HumanoidRootPart
+	local args = {...}
+	for i=0,1,0.05 do
+		wait()
+		root.CFrame = root.CFrame:lerp(CFrame.new(unpack(args,1,3)), i)
+	end
+end
+
+function TpMethod2(...)
+	local args = {...}
+	local char = plr.Character
+	local target = Vector3.new(unpack(args,1,3))
+	local dist = (char:WaitForChild"HumanoidRootPart".Position - target).magnitude
+	dist = math.floor(dist / 100) + 1
+	for i=0,dist * 4 do
+		wait()
+		char:MoveTo(Vector3.new(...))
+	end
+	if args[#args] == true then
+		wait()
+		char:WaitForChild'HumanoidRootPart'.CFrame = CFrame.new(unpack(args,1,#args - 1))
+	end
+end
+
+function Tween(obj, t, properties)
+	local TweenService = game:GetService("TweenService")
+	local tweenInfo = TweenInfo.new(t,Enum.EasingStyle.Linear,Enum.EasingDirection.In,0,false,0)
+	local tween = TweenService:Create(obj,tweenInfo,properties)
+	tween:Play()
+	return tween
+end
+-- Instances:
+local JailBreakerV12 = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local TPS = Instance.new("Frame")
+local gas = Instance.new("TextButton")
+local donut = Instance.new("TextButton")
+local JewOut = Instance.new("TextButton")
+local JewIn = Instance.new("TextButton")
+local BankVault = Instance.new("TextButton")
+local BankFront = Instance.new("TextButton")
+local crim1 = Instance.new("TextButton")
+local crim2 = Instance.new("TextButton")
+local train = Instance.new("TextButton")
+local Gravity = Instance.new("TextButton")
+local Walkspeed = Instance.new("TextButton")
+local autoarrest = Instance.new("TextButton")
+local MuseumTop = Instance.new("TextButton")
+local Museum = Instance.new("TextButton")
+local RemoveALL = Instance.new("TextButton")
+local JB2 = Instance.new("Frame")
+local CarFly = Instance.new("TextButton")
+local CtrlDelete = Instance.new("TextButton")
+local Noclip = Instance.new("TextButton")
+local BTools = Instance.new("TextButton")
+local InfiniteHealth = Instance.new("TextButton")
+local InfiniteNitro = Instance.new("TextButton")
+local InfiniteAmmo = Instance.new("TextButton")
+local Stuff = Instance.new("Frame")
+local Jailbreak2 = Instance.new("TextButton")
+local Teleports = Instance.new("TextButton")
+local Jailbreak3 = Instance.new("TextButton")
+local Design2 = Instance.new("Frame")
+local Exit = Instance.new("TextButton")
+local Name = Instance.new("TextLabel")
+local JB3 = Instance.new("Frame")
+local PlayerTP_Input = Instance.new("TextBox")
+local PlayerTP_Teleport = Instance.new("TextButton")
+local BankAutoRobBtn = Instance.new("TextButton")
+local BankStatus = Instance.new("TextLabel")
+local JewelryStatus = Instance.new("TextLabel")
+local Open = Instance.new("TextButton")
+--Properties:
+JailBreakerV12.Name = "JailBreaker V1.2"
+JailBreakerV12.Parent = game.CoreGui
+
+Main.Name = "Main"
+Main.Parent = JailBreakerV12
+Main.Active = true
+Main.BackgroundColor3 = Color3.new(0.247059, 0.247059, 0.247059)
+Main.BorderColor3 = Color3.new(0.0627451, 0.101961, 0.129412)
+Main.Position = UDim2.new(0.400000006, 0, 1.70000005, 0)
+Main.Size = UDim2.new(0, 406, 0, 320)
+Main.Draggable = true
+
+TPS.Name = "TPS"
+TPS.Parent = Main
+TPS.BackgroundColor3 = Color3.new(1, 1, 0)
+TPS.BackgroundTransparency = 1
+TPS.Position = UDim2.new(0, 0, 0.321875006, 0)
+TPS.Size = UDim2.new(0, 575, 0, 211)
+
+gas.Name = "gas"
+gas.Parent = TPS
+gas.BackgroundColor3 = Color3.new(1, 0, 0)
+gas.Position = UDim2.new(0.248333335, 0, 0.215721205, 0)
+gas.Size = UDim2.new(0, 120, 0, 30)
+gas.Font = Enum.Font.ArialBold
+gas.Text = "Gas Station"
+gas.TextScaled = true
+gas.TextSize = 14
+gas.TextWrapped = true
+
+donut.Name = "donut"
+donut.Parent = TPS
+donut.BackgroundColor3 = Color3.new(1, 0, 0)
+donut.Position = UDim2.new(0.248333335, 0, 0.590128779, 0)
+donut.Size = UDim2.new(0, 120, 0, 30)
+donut.Font = Enum.Font.ArialBold
+donut.Text = "Donut Shop"
+donut.TextScaled = true
+donut.TextSize = 14
+donut.TextWrapped = true
+
+JewOut.Name = "JewOut"
+JewOut.Parent = TPS
+JewOut.BackgroundColor3 = Color3.new(1, 0, 0)
+JewOut.Position = UDim2.new(0.0116666555, 0, 0.593464613, 0)
+JewOut.Size = UDim2.new(0, 120, 0, 30)
+JewOut.Font = Enum.Font.ArialBold
+JewOut.Text = "Jewelry Top"
+JewOut.TextScaled = true
+JewOut.TextSize = 14
+JewOut.TextWrapped = true
+
+JewIn.Name = "JewIn"
+JewIn.Parent = TPS
+JewIn.BackgroundColor3 = Color3.new(1, 0, 0)
+JewIn.Position = UDim2.new(0.0116666853, 0, 0.399151802, 0)
+JewIn.Size = UDim2.new(0, 120, 0, 30)
+JewIn.Font = Enum.Font.ArialBold
+JewIn.Text = "Jewelry Inside"
+JewIn.TextScaled = true
+JewIn.TextSize = 14
+JewIn.TextWrapped = true
+
+BankVault.Name = "BankVault"
+BankVault.Parent = TPS
+BankVault.BackgroundColor3 = Color3.new(1, 0, 0)
+BankVault.Position = UDim2.new(0.0116666555, 0, 0.218009472, 0)
+BankVault.Size = UDim2.new(0, 120, 0, 30)
+BankVault.Font = Enum.Font.ArialBold
+BankVault.Text = "BankVault"
+BankVault.TextScaled = true
+BankVault.TextSize = 14
+BankVault.TextWrapped = true
+
+BankFront.Name = "BankFront"
+BankFront.Parent = TPS
+BankFront.BackgroundColor3 = Color3.new(1, 0, 0)
+BankFront.Position = UDim2.new(0.0116666667, 0, 0.0284360182, 0)
+BankFront.Size = UDim2.new(0, 120, 0, 30)
+BankFront.Font = Enum.Font.ArialBold
+BankFront.Text = "BankFront"
+BankFront.TextScaled = true
+BankFront.TextSize = 14
+BankFront.TextWrapped = true
+
+crim1.Name = "crim1"
+crim1.Parent = TPS
+crim1.BackgroundColor3 = Color3.new(1, 0, 0)
+crim1.Position = UDim2.new(0.0116666853, 0, 0.791977763, 0)
+crim1.Size = UDim2.new(0, 120, 0, 30)
+crim1.Font = Enum.Font.ArialBold
+crim1.Text = "Criminal Base 1"
+crim1.TextScaled = true
+crim1.TextSize = 14
+crim1.TextWrapped = true
+
+crim2.Name = "crim2"
+crim2.Parent = TPS
+crim2.BackgroundColor3 = Color3.new(1, 0, 0)
+crim2.Position = UDim2.new(0.24833335, 0, 0.0306429788, 0)
+crim2.Size = UDim2.new(0, 120, 0, 30)
+crim2.Font = Enum.Font.ArialBold
+crim2.Text = "Criminal Base 2"
+crim2.TextScaled = true
+crim2.TextSize = 14
+crim2.TextWrapped = true
+
+train.Name = "train"
+train.Parent = TPS
+train.BackgroundColor3 = Color3.new(1, 0, 0)
+train.Position = UDim2.new(0.24833332, 0, 0.39810428, 0)
+train.Size = UDim2.new(0, 120, 0, 30)
+train.Font = Enum.Font.ArialBold
+train.Text = "Train Spawn"
+train.TextScaled = true
+train.TextSize = 14
+train.TextWrapped = true
+
+Gravity.Name = "Gravity"
+Gravity.Parent = TPS
+Gravity.BackgroundColor3 = Color3.new(1, 0, 0)
+Gravity.Position = UDim2.new(0.482666641, 0, 0.591469228, 0)
+Gravity.Size = UDim2.new(0, 120, 0, 30)
+Gravity.Font = Enum.Font.ArialBold
+Gravity.Text = "Gravity"
+Gravity.TextScaled = true
+Gravity.TextSize = 14
+Gravity.TextWrapped = true
+
+Walkspeed.Name = "Walkspeed"
+Walkspeed.Parent = TPS
+Walkspeed.BackgroundColor3 = Color3.new(1, 0, 0)
+Walkspeed.Position = UDim2.new(0.482971013, 0, 0.399052143, 0)
+Walkspeed.Size = UDim2.new(0, 120, 0, 30)
+Walkspeed.Font = Enum.Font.ArialBold
+Walkspeed.Text = "Walkspeed [X]"
+Walkspeed.TextScaled = true
+Walkspeed.TextSize = 14
+Walkspeed.TextWrapped = true
+Walkspeed.MouseButton1Down:connect(function()
+	local walkspeedplayer = game:GetService("Players").LocalPlayer
+	local walkspeedmouse = walkspeedplayer:GetMouse()
+	
+	local walkspeedenabled = false
+	
+	function x_walkspeed(key)
+		if (key == "x") then
+			if walkspeedenabled == false then
+				_G.WS = 200;
+				local Humanoid = game:GetService("Players").LocalPlayer.Character.Humanoid;
+				Humanoid:GetPropertyChangedSignal("WalkSpeed"):Connect(function()
+				Humanoid.WalkSpeed = _G.WS;
+				end)
+				Humanoid.WalkSpeed = _G.WS;
+				
+				walkspeedenabled = true
+			elseif walkspeedenabled == true then
+				_G.WS = 20;
+				local Humanoid = game:GetService("Players").LocalPlayer.Character.Humanoid;
+				Humanoid:GetPropertyChangedSignal("WalkSpeed"):Connect(function()
+				Humanoid.WalkSpeed = _G.WS;
+				end)
+				Humanoid.WalkSpeed = _G.WS;
+				
+				walkspeedenabled = false
+			end
+		end
+	end
+	
+	walkspeedmouse.KeyDown:connect(x_walkspeed)
+	
+end)
+autoarrest.Name = "autoarrest"
+autoarrest.Parent = TPS
+autoarrest.BackgroundColor3 = Color3.new(1, 0, 0)
+autoarrest.Position = UDim2.new(0.48333329, 0, 0.199052066, 0)
+autoarrest.Size = UDim2.new(0, 120, 0, 30)
+autoarrest.Font = Enum.Font.ArialBold
+autoarrest.Text = "Auto Arrest"
+autoarrest.TextScaled = true
+autoarrest.TextSize = 14
+autoarrest.TextWrapped = true
+autoarrest.MouseButton1Down:connect(function()
+local Player = game.Players.LocalPlayer
+wait(0.5)
+for i,v in pairs(game.Teams.Criminal:GetPlayers()) do
+	repeat
+	wait()
+	Player.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame * CFrame.new(0, 0, 1)
+	until v.Team.Name ~= "Criminal"
+end
+
+end)
+MuseumTop.Name = "MuseumTop"
+MuseumTop.Parent = TPS
+MuseumTop.BackgroundColor3 = Color3.new(1, 0, 0)
+MuseumTop.Position = UDim2.new(0.482971072, 0, 0.0303317457, 0)
+MuseumTop.Size = UDim2.new(0, 120, 0, 30)
+MuseumTop.Font = Enum.Font.ArialBold
+MuseumTop.Text = "Museum Roof"
+MuseumTop.TextScaled = true
+MuseumTop.TextSize = 14
+MuseumTop.TextWrapped = true
+MuseumTop.MouseButton1Down:connect(function()
+	for i = 1,45 do
+wait(.08)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1078.45, 153.904, 1176.52) + Vector3.new(1,0,0)
+end
+end)
+Museum.Name = "Museum"
+Museum.Parent = TPS
+Museum.BackgroundColor3 = Color3.new(1, 0, 0)
+Museum.Position = UDim2.new(0.248333335, 0, 0.789180934, 0)
+Museum.Size = UDim2.new(0, 120, 0, 30)
+Museum.Font = Enum.Font.ArialBold
+Museum.Text = "Museum In"
+Museum.TextScaled = true
+Museum.TextSize = 14
+Museum.TextWrapped = true
+Museum.MouseButton1Down:connect(function()
+	for i = 1,45 do
+wait(.08)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1063.02, 117.562, 1218.757) + Vector3.new(1,0,0)
+end
+end)
+RemoveALL.Name = "RemoveALL"
+RemoveALL.Parent = TPS
+RemoveALL.BackgroundColor3 = Color3.new(1, 0, 0)
+RemoveALL.Position = UDim2.new(0.483333349, 0, 0.791469157, 0)
+RemoveALL.Size = UDim2.new(0, 120, 0, 30)
+RemoveALL.Font = Enum.Font.ArialBold
+RemoveALL.Text = "Remove ALL"
+RemoveALL.TextScaled = true
+RemoveALL.TextSize = 14
+RemoveALL.TextWrapped = true
+RemoveALL.MouseButton1Down:connect(function()	
+	game.Workspace.Cells:Remove()
+	
+	game.Workspace.Museum.CaseLasers:Remove()
+	
+	game.Workspace.Museum.Lights:Remove()
+	
+	game.Workspace.Museum.Doors:Remove()
+	
+	game.Workspace.EscapeRoutes:Remove()
+	
+	for i,v in pairs(workspace.Doors:GetChildren()) do
+    v:Destroy()
+	
+	end
+end)
+
+RemoveALL.MouseButton1Down:connect(function()
+	local banklasers = game:GetService("Workspace").Banks:GetChildren()
+	banklasers[1].Lasers:Destroy()
+end)
+
+RemoveALL.MouseButton1Down:connect(function()
+local jewelry = game:GetService("Workspace").Jewelrys:GetChildren()
+	
+	for i = 1,4 do
+	local xd = jewelry[1].Model.BarbedWire
+	xd:Destroy()
+	end
+end)
+
+RemoveALL.MouseButton1Down:connect(function()
+	local banklasers = game:GetService("Workspace").Banks:GetChildren()
+	banklasers[1].Door.Model:Destroy()
+end)
+JB2.Name = "JB2"
+JB2.Parent = Main
+JB2.Active = true
+JB2.BackgroundColor3 = Color3.new(0.247059, 0.247059, 0.247059)
+JB2.Position = UDim2.new(0, 0, 0.303124994, 0)
+JB2.Size = UDim2.new(0, 406, 0, 223)
+JB2.Visible = false
+
+CarFly.Name = "CarFly"
+CarFly.Parent = JB2
+CarFly.BackgroundColor3 = Color3.new(1, 0, 0)
+CarFly.Position = UDim2.new(0.0134848487, 0, 0.351305991, 0)
+CarFly.Size = UDim2.new(0, 120, 0, 30)
+CarFly.Font = Enum.Font.ArialBold
+CarFly.Text = "Broken"
+CarFly.TextScaled = true
+CarFly.TextSize = 14
+CarFly.TextWrapped = true
+
+
+CtrlDelete.Name = "CtrlDelete"
+CtrlDelete.Parent = JB2
+CtrlDelete.BackgroundColor3 = Color3.new(1, 0, 0)
+CtrlDelete.Position = UDim2.new(0.684413791, 0, 0.0256950557, 0)
+CtrlDelete.Size = UDim2.new(0, 120, 0, 30)
+CtrlDelete.Font = Enum.Font.ArialBold
+CtrlDelete.Text = "Broken"
+CtrlDelete.TextScaled = true
+CtrlDelete.TextSize = 14
+CtrlDelete.TextWrapped = true
+
+Noclip.Name = "Noclip"
+Noclip.Parent = JB2
+Noclip.BackgroundColor3 = Color3.new(1, 0, 0)
+Noclip.Position = UDim2.new(0.011808035, 0, 0.0278536938, 0)
+Noclip.Size = UDim2.new(0, 120, 0, 30)
+Noclip.Font = Enum.Font.ArialBold
+Noclip.Text = "Noclip[B]"
+Noclip.TextScaled = true
+Noclip.TextSize = 14
+Noclip.TextWrapped = true
+
+BTools.Name = "BTools"
+BTools.Parent = JB2
+BTools.BackgroundColor3 = Color3.new(1, 0, 0)
+BTools.Position = UDim2.new(0.0134630539, 0, 0.189484313, 0)
+BTools.Size = UDim2.new(0, 120, 0, 30)
+BTools.Font = Enum.Font.ArialBold
+BTools.Text = "BTools"
+BTools.TextScaled = true
+BTools.TextSize = 14
+BTools.TextWrapped = true
+
+InfiniteHealth.Name = "InfiniteHealth"
+InfiniteHealth.Parent = JB2
+InfiniteHealth.BackgroundColor3 = Color3.new(1, 0, 0)
+InfiniteHealth.Position = UDim2.new(0.352975368, 0, 0.348161429, 0)
+InfiniteHealth.Size = UDim2.new(0, 120, 0, 30)
+InfiniteHealth.Font = Enum.Font.ArialBold
+InfiniteHealth.Text = "Infinite Health"
+InfiniteHealth.TextScaled = true
+InfiniteHealth.TextSize = 14
+InfiniteHealth.TextWrapped = true
+
+InfiniteNitro.Name = "InfiniteNitro"
+InfiniteNitro.Parent = JB2
+InfiniteNitro.BackgroundColor3 = Color3.new(1, 0, 0)
+InfiniteNitro.Position = UDim2.new(0.352214128, 0, 0.186933994, 0)
+InfiniteNitro.Size = UDim2.new(0, 120, 0, 30)
+InfiniteNitro.Font = Enum.Font.ArialBold
+InfiniteNitro.Text = "Infinite Nitro"
+InfiniteNitro.TextScaled = true
+InfiniteNitro.TextSize = 14
+InfiniteNitro.TextWrapped = true
+
+InfiniteAmmo.Name = "InfiniteAmmo"
+InfiniteAmmo.Parent = JB2
+InfiniteAmmo.BackgroundColor3 = Color3.new(1, 0, 0)
+InfiniteAmmo.Position = UDim2.new(0.351287931, 0, 0.0284955502, 0)
+InfiniteAmmo.Size = UDim2.new(0, 120, 0, 30)
+InfiniteAmmo.Font = Enum.Font.ArialBold
+InfiniteAmmo.Text = "Infinite Ammo"
+InfiniteAmmo.TextScaled = true
+InfiniteAmmo.TextSize = 14
+InfiniteAmmo.TextWrapped = true
+
+Stuff.Name = "Stuff"
+Stuff.Parent = Main
+Stuff.Active = true
+Stuff.BackgroundColor3 = Color3.new(1, 0, 0)
+Stuff.BorderColor3 = Color3.new(0.0627451, 0.101961, 0.129412)
+Stuff.Position = UDim2.new(0, 0, 0.112499997, 0)
+Stuff.Size = UDim2.new(0, 406, 0, 61)
+
+Jailbreak2.Name = "Jailbreak 2"
+Jailbreak2.Parent = Stuff
+Jailbreak2.BackgroundColor3 = Color3.new(1, 1, 0)
+Jailbreak2.Position = UDim2.new(0.35221675, 0, 0.245901644, 0)
+Jailbreak2.Size = UDim2.new(0, 120, 0, 30)
+Jailbreak2.Font = Enum.Font.SourceSansBold
+Jailbreak2.Text = "JailBreak 2"
+Jailbreak2.TextScaled = true
+Jailbreak2.TextSize = 14
+Jailbreak2.TextWrapped = true
+Jailbreak2.MouseButton1Down:connect(function()
+    TPS.Visible = false
+    JB3.Visible = false
+    JB2.Visible = true
+end)
+Teleports.Name = "Teleports"
+Teleports.Parent = Stuff
+Teleports.BackgroundColor3 = Color3.new(1, 1, 0)
+Teleports.Position = UDim2.new(0.0172413792, 0, 0.245901644, 0)
+Teleports.Size = UDim2.new(0, 120, 0, 30)
+Teleports.Font = Enum.Font.SourceSansBold
+Teleports.Text = "Jailbreak"
+Teleports.TextScaled = true
+Teleports.TextSize = 14
+Teleports.TextWrapped = true
+Teleports.MouseButton1Down:connect(function()
+    TPS.Visible = true
+    JB3.Visible = false
+    JB2.Visible = false
+end)
+Jailbreak3.Name = "Jailbreak 3"
+Jailbreak3.Parent = Stuff
+Jailbreak3.BackgroundColor3 = Color3.new(1, 1, 0)
+Jailbreak3.Position = UDim2.new(0.68472904, 0, 0.245901644, 0)
+Jailbreak3.Size = UDim2.new(0, 120, 0, 30)
+Jailbreak3.Font = Enum.Font.SourceSansBold
+Jailbreak3.Text = "JailBreak 3"
+Jailbreak3.TextScaled = true
+Jailbreak3.TextSize = 14
+Jailbreak3.TextWrapped = true
+Jailbreak3.MouseButton1Down:connect(function()
+    TPS.Visible = false
+    JB3.Visible = true
+    JB2.Visible = false
+end)
+Design2.Name = "Design2"
+Design2.Parent = Main
+Design2.Active = true
+Design2.BackgroundColor3 = Color3.new(0.760784, 0, 0)
+Design2.BorderColor3 = Color3.new(0.0627451, 0.101961, 0.129412)
+Design2.Size = UDim2.new(0, 406, 0, 36)
+
+Exit.Name = "Exit"
+Exit.Parent = Design2
+Exit.BackgroundColor3 = Color3.new(0.760784, 0, 0)
+Exit.BackgroundTransparency = 1
+Exit.BorderColor3 = Color3.new(0.364706, 0, 1)
+Exit.BorderSizePixel = 0
+Exit.Position = UDim2.new(0.918333352, 0, 0.166666672, 0)
+Exit.Size = UDim2.new(0, 38, 0, 25)
+Exit.Font = Enum.Font.SourceSans
+Exit.Text = ""
+Exit.TextColor3 = Color3.new(0, 0, 0)
+Exit.TextScaled = true
+Exit.TextSize = 14
+Exit.TextWrapped = true
+
+Name.Name = "Name"
+Name.Parent = Design2
+Name.BackgroundColor3 = Color3.new(0.760784, 0, 0)
+Name.Position = UDim2.new(0.0116666667, 0, 0.166666672, 0)
+Name.Size = UDim2.new(0, 233, 0, 25)
+Name.Font = Enum.Font.Cartoon
+Name.Text = "JailBreaker V1.2"
+Name.TextColor3 = Color3.new(0, 0, 0)
+Name.TextScaled = true
+Name.TextSize = 14
+Name.TextWrapped = true
+
+JB3.Name = "JB3"
+JB3.Parent = Main
+JB3.Active = true
+JB3.BackgroundColor3 = Color3.new(0.247059, 0.247059, 0.247059)
+JB3.Position = UDim2.new(0, 0, 0.303124994, 0)
+JB3.Size = UDim2.new(0, 406, 0, 223)
+JB3.Visible = false
+
+PlayerTP_Input.Name = "PlayerTP_Input"
+PlayerTP_Input.Parent = JB3
+PlayerTP_Input.BackgroundColor3 = Color3.new(1, 0, 0)
+PlayerTP_Input.Position = UDim2.new(0.0172413792, 0, 0.188340813, 0)
+PlayerTP_Input.Size = UDim2.new(0, 391, 0, 50)
+PlayerTP_Input.Font = Enum.Font.ArialBold
+PlayerTP_Input.Text = "Player Name"
+PlayerTP_Input.TextSize = 20
+PlayerTP_Input.TextWrapped = true
+
+PlayerTP_Teleport.Name = "PlayerTP_Teleport"
+PlayerTP_Teleport.Parent = JB3
+PlayerTP_Teleport.BackgroundColor3 = Color3.new(0.4, 0.0980392, 1)
+PlayerTP_Teleport.Position = UDim2.new(0.0172413792, 0, 0.4573991, 0)
+PlayerTP_Teleport.Size = UDim2.new(0, 391, 0, 50)
+PlayerTP_Teleport.Font = Enum.Font.SourceSansBold
+PlayerTP_Teleport.Text = "Teleport To Player"
+PlayerTP_Teleport.TextScaled = true
+PlayerTP_Teleport.TextSize = 14
+PlayerTP_Teleport.TextWrapped = true
+
+BankAutoRobBtn.Name = "BankAutoRobBtn"
+BankAutoRobBtn.Parent = JB3
+BankAutoRobBtn.BackgroundColor3 = Color3.new(1, 0, 0)
+BankAutoRobBtn.Position = UDim2.new(0.0172413792, 0, 0.0269058291, 0)
+BankAutoRobBtn.Size = UDim2.new(0, 391, 0, 30)
+BankAutoRobBtn.Font = Enum.Font.ArialBold
+BankAutoRobBtn.Text = "Bank Auto Rob"
+BankAutoRobBtn.TextScaled = true
+BankAutoRobBtn.TextSize = 14
+BankAutoRobBtn.TextWrapped = true
+BankAutoRobBtn.MouseButton1Click:connect(function()
+	local Bank = workspace:FindFirstChild("Banks"):GetChildren()[1]
+	local Info = Bank.Extra.Sign
+	if Info.Decal.Transparency == 0 then
+		game:GetService("StarterGui"):SetCore("SendNotification",{
+			Title = "Bank is closed!",
+			Text = "You need to wait for the bank to open!",
+			Duration = 7,
+			Button1 = "Dismiss",
+		})
+		return
+	end
+	local bankpos = Vector3.new(Info.Position.X,0,Info.Position.Z)
+	local root = plr.Character.HumanoidRootPart
+	local plrpos = Vector3.new(root.Position.X,0,root.Position.Z)
+	
+	if (bankpos - plrpos).magnitude > 150 then
+		local cb = Instance.new"BindableFunction"
+
+		cb.OnInvoke = function(arg)
+			if arg == "Teleport" then
+				JailbreakTp(10, 18, 784)
+			end
+		end
+		
+		game:GetService("StarterGui"):SetCore("SendNotification",{
+			Title = "You are too far!",
+			Text = "You need to get closer to the bank (use tp)",
+			Duration = 7,
+			Button1 = "Dismiss",
+			Button2 = "Teleport",
+			Callback = cb
+		})
+	else
+		RobTheBank()
+	end
+end)
+BankStatus.Name = "BankStatus"
+BankStatus.Parent = JB3
+BankStatus.BackgroundColor3 = Color3.new(0, 0.384314, 1)
+BankStatus.Position = UDim2.new(0.731034517, 0, 0.86007303, 0)
+BankStatus.Size = UDim2.new(0, 101, 0, 26)
+BankStatus.Font = Enum.Font.SourceSans
+BankStatus.Text = "Bank:"
+BankStatus.TextColor3 = Color3.new(0, 0, 0)
+BankStatus.TextSize = 14
+
+JewelryStatus.Name = "JewelryStatus"
+JewelryStatus.Parent = JB3
+JewelryStatus.BackgroundColor3 = Color3.new(0, 0.384314, 1)
+JewelryStatus.Position = UDim2.new(0.0174630284, 0, 0.86007303, 0)
+JewelryStatus.Size = UDim2.new(0, 101, 0, 26)
+JewelryStatus.Font = Enum.Font.SourceSans
+JewelryStatus.Text = "Jewelry:"
+JewelryStatus.TextColor3 = Color3.new(0, 0, 0)
+JewelryStatus.TextSize = 14
+
+Open.Name = "Open"
+Open.Parent = JailBreakerV12
+Open.BackgroundColor3 = Color3.new(1, 0, 0)
+Open.Position = UDim2.new(0, 0, 0.75, 0)
+Open.Size = UDim2.new(0, 100, 0, 40)
+Open.Font = Enum.Font.Bodoni
+Open.Text = "Open/Close"
+Open.TextWrapped = true
+Open.TextScaled = true
+local toogle = false
+Open.MouseButton1Down:connect(function()
+   if toogle == false then
+Main:TweenPosition(UDim2.new(0.4,0,0.25,0), 'Out', 'Bounce', 1)
+        toogle = true
+   else 
+Main:TweenPosition(UDim2.new(0.4,0,1.7,0), 'Out', 'Bounce', 1)
+     toogle = false
+end
+end)
+
+      
+-- Scripts:
+gas.MouseButton1Down:connect(function()
+for i = 1,45 do
+wait(.08)
+game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1586.41101, 17.8481865, 709.37262)
+end
+end)
+
+donut.MouseButton1Down:connect(function()
+	for i = 1,45 do
+wait(.08)
+game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(257.191101, 17.81828869, -1753.11206)
+end
+end)
+
+JewOut.MouseButton1Down:connect(function()
+	for i = 1,45 do
+wait(.08)
+game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(101.211128, 98.6576996, 1310.54175)
+end
+end)
+
+JewIn.MouseButton1Down:connect(function()
+	for i = 1,45 do
+wait(.08)
+game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(133.300705, 17.9375954, 1316.42407)
+end
+end)
+
+BankVault.MouseButton1Down:connect(function()
+	for i = 1,45 do
+wait(.08)
+game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(18.3854294, 0.765628457, 815.506348)
+end
+end)
+
+BankFront.MouseButton1Down:connect(function()
+	for i = 1,45 do
+wait(.08)
+game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(9.92591476, 17.8639755, 786.788147)
+end
+end)
+
+crim1.MouseButton1Down:connect(function()
+	for i = 1,45 do
+wait(.08)
+game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-221.723099, 17.8924026, 1578.80261)
+end
+end)
+
+crim2.MouseButton1Down:connect(function()
+	for i = 1,45 do
+wait(.08)
+game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1650.80896, 49.863636, -1770.66626)
+end
+end)
+
+train.MouseButton1Down:connect(function()
+	for i = 1,45 do
+wait(.08)
+game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1954.95007, 68.0448606, -603.844116)
+end
+end)
+
+
+
+--- other stuff
+
+BTools.MouseButton1Down:connect(function()
+	game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, true)
+for index, child in pairs(game:GetService("Workspace"):GetChildren()) do
+   if child.ClassName == "Part" then
+       child.Locked = false
+   end
+   if child.ClassName == "MeshPart" then
+       child.Locked = false
+   end
+   if child.ClassName == "UnionOperation" then
+       child.Locked = false
+   end
+   if child.ClassName == "Model" then
+       for index, chil in pairs(child:GetChildren()) do
+           if chil.ClassName == "Part" then
+               chil.Locked = false
+           end
+           if chil.ClassName == "MeshPart" then
+               chil.Locked = false
+           end
+           if chil.ClassName == "UnionOperation" then
+               chil.Locked = false
+           end
+           if chil.ClassName == "Model" then
+               for index, childe in pairs(chil:GetChildren()) do
+                   if childe.ClassName == "Part" then
+                       childe.Locked = false
+                   end
+                   if childe.ClassName == "MeshPart" then
+                       childe.Locked = false
+                   end
+                   if childe.ClassName == "UnionOperation" then
+                       childe.Locked = false
+                   end
+                   if childe.ClassName == "Model" then
+                       for index, childeo in pairs(childe:GetChildren()) do
+                           if childeo.ClassName == "Part" then
+                               childeo.Locked = false
+                           end
+                           if childeo.ClassName == "MeshPart" then
+                               childeo.Locked = false
+                           end
+                           if childeo.ClassName == "UnionOperation" then
+                               childeo.Locked = false
+                           end
+                           if childeo.ClassName == "Model" then
+                           end
+                       end
+                   end
+               end
+           end
+       end
+   end
+end
+c = Instance.new("HopperBin", game:GetService("Players").LocalPlayer.Backpack)
+c.BinType = Enum.BinType.Hammer
+c = Instance.new("HopperBin", game:GetService("Players").LocalPlayer.Backpack)
+c.BinType = Enum.BinType.Clone
+c = Instance.new("HopperBin", game:GetService("Players").LocalPlayer.Backpack)
+c.BinType = Enum.BinType.Grab
+end)
+
+Gravity.MouseButton1Down:connect(function()
+if Gravity == true then
+Gravity = false
+game.workspace.Gravity = 196.2
+else
+Gravity = true
+game.workspace.Gravity = 45
+end
+end)
+
+InfiniteAmmo.MouseButton1Down:connect(function()
+	game:GetService("Players").LocalPlayer.PlayerGui.MainGui.Ammo.Current:Destroy()
+end)
+
+InfiniteHealth.MouseButton1Down:connect(function()
+	game:GetService("Players").LocalPlayer.Character.Humanoid.Name = 1
+local l = game:GetService("Players").LocalPlayer.Character["1"]:Clone()
+l.Parent = game:GetService("Players").LocalPlayer.Character
+l.Name = "Humanoid"
+wait(0.1)
+game:GetService("Players").LocalPlayer.Character["1"]:Destroy()
+game:GetService("Workspace").CurrentCamera.CameraSubject = game:GetService("Players").LocalPlayer.Character
+game:GetService("Players").LocalPlayer.Character.Animate.Disabled = true
+wait(0.1)
+game:GetService("Players").LocalPlayer.Character.Animate.Disabled = false
+game:GetService("Players").LocalPlayer.Character.Humanoid.DisplayDistanceType = "None"
+end)
+
+InfiniteNitro.MouseButton1Down:connect(function()
+	game:GetService('Players').LocalPlayer.PlayerGui.MainGui.Nitro.Name = "69696969"
+    game:GetService('Players').LocalPlayer.PlayerGui.ProductGui.Nitro:ClearAllChildren()
+end)
+
+Noclip.MouseButton1Down:connect(function()
+	local noclipplayer = game:GetService("Players").LocalPlayer
+	local noclipmouse = noclipplayer:GetMouse()
+	
+	local donoclip = false
+	local noclip = false
+	
+	function b_noclip(key)
+		if (key == "b") then
+			if noclip == false then
+				donoclip = true
+				
+				noclip = true
+			elseif noclip == true then
+				donoclip = false
+				
+				noclip = false
+			end
+		end
+	end
+	
+	noclipmouse.KeyDown:connect(b_noclip)
+	
+	game:GetService("Players").LocalPlayer.Character.Head.Touched:connect(function(obj)
+		if obj ~= workspace.Terrain then
+			if donoclip == true then
+				obj.CanCollide = false
+			else
+				obj.CanCollide = true
+			end
+		end
+	end)
+end)
+
+
+
+-- player tp
+PlayerTP_Teleport.MouseButton1Down:connect(function()
+	local tp_namedplayer = PlayerTP_Input.Text
+	local tp_player = game:GetService("Players")[tp_namedplayer]
+	local PLR = game:GetService("Players").LocalPlayer
+	local p = PlayerTP_Input.Text
+	
+	if tp_player then 
+			for i = 1,45 do
+		wait(.08)
+		PLR.Character.HumanoidRootPart.CFrame = tp_player.Character.HumanoidRootPart.CFrame + Vector3.new(0, 3, 0)
+		end
+	end
+end)
+
+
+--AutoRob stuff--
+local DuffelBag = game:GetService("MarketplaceService"):PlayerOwnsAsset(plr, 2219040)
+local BankAutoRob = {
+	{
+		Pos = {51, 18.06, 856.5},
+		Yield = 2,
+		Status = "Starting the robbery"
+	},
+	{
+		Pos = {29.71, 0.73, 815.25},
+		Yield = 15,
+		Status = "Opening the vault"
+	},
+	{
+		Pos = {18.37, 0.7659, 822.25},
+		Yield = DuffelBag and 50 or 40,
+		Status = "Collecting $$$"
+	},
+	{
+		Pos = {10, 18, 784},
+		Status = "Finishing the robbery"
+	}
+}
+
+local function Tp(...)
+	local char = plr.Character
+	for i=1,2 do
+		wait()
+		char:WaitForChild'HumanoidRootPart'.CFrame = CFrame.new(...)
+	end
+end
+
+function RobTheBank()
+	for _,v in pairs(BankAutoRob) do
+		Tp(unpack(v.Pos))
+		wait(v.Yield)
+	end
+end
+
+--Bank notification--
+pcall(function()
+	local Bank = workspace:FindFirstChild("Banks"):GetChildren()[1]
+	local Info = Bank.Extra.Sign.Decal
+	Info:GetPropertyChangedSignal("Transparency"):Connect(function()
+		if Info.Transparency ~= 0 then
+			BankStatus.Text = "Bank:Open"
+			BankStatus.TextColor3 = Color3.new(0,1,0)
+			BankAutoRobBtn.BackgroundColor3 = Color3.new(0,1,0)
+			local cb = Instance.new("BindableFunction")
+			cb.OnInvoke = function(arg)
+				if arg == "Teleport" then
+					JailbreakTp(10, 18, 784)
+				elseif arg == "AutoRob" then
+					RobTheBank()
+				end
+			end
+			game:GetService("StarterGui"):SetCore("SendNotification",{
+				Title = "Bank is ready!",
+				Text = "Bank is ready!",
+				Duration = 15,
+				Button1 = "Dismiss",
+				Button2 = (Vector3.new(Info.Parent.Position.X,0,Info.Parent.Position.Z) - Vector3.new(plr.Character.HumanoidRootPart.Position.X,0,plr.Character.HumanoidRootPart.Position.Z)).magnitude < 150 and "AutoRob" or "Teleport",
+				Callback = cb
+			})
+		else
+			BankStatus.Text = "Bank:Closed"
+			BankStatus.TextColor3 = Color3.new(1,0,0)
+			BankAutoRobBtn.BackgroundColor3 = Color3.new(1,0,0)
+		end
+	end)
+	BankStatus.Text = Info.Transparency == 0 and "Bank:Closed" or "Bank:Open"
+	BankStatus.TextColor3 = Info.Transparency == 0 and Color3.new(1,0,0) or Color3.new(0,1,0)
+	BankAutoRobBtn.BackgroundColor3 = Info.Transparency == 0 and Color3.new(1,0,0) or Color3.new(0,1,0)
+end)
+--Jewelry notification--
+pcall(function()
+	local Jewelry = workspace:FindFirstChild("Jewelrys"):GetChildren()[1]
+	local Info = Jewelry.Extra.Sign.Decal
+	Info:GetPropertyChangedSignal("Transparency"):Connect(function()
+		if Info.Transparency ~= 0 then
+			JewelryStatus.Text = "Jewelry:Open"
+			JewelryStatus.TextColor3 = Color3.new(0,1,0)
+			BankStatus.TextColor3 = Color3.new(0,1,0)
+			local cb = Instance.new("BindableFunction")
+			cb.OnInvoke = function(arg)
+				if arg == "Teleport" then
+					JailbreakTp(142, 18, 1365)
+				end
+			end
+			game:GetService("StarterGui"):SetCore("SendNotification",{
+				Title = "Jewelry is ready!",
+				Text = "Jewelry is ready!",
+				Duration = 15,
+				Button1 = "Dismiss",
+				Button2 = "Teleport",
+				Callback = cb
+			})
+		else
+			JewelryStatus.Text = "Jewelry:Closed"
+			JewelryStatus.TextColor3 = Color3.new(1,0,0)
+		end
+	end)
+	JewelryStatus.Text = Info.Transparency == 0 and "Jewelry:Closed" or "Jewelry:Open"
+	JewelryStatus.TextColor3 = Info.Transparency == 0 and Color3.new(1,0,0) or Color3.new(0,1,0)
+end)

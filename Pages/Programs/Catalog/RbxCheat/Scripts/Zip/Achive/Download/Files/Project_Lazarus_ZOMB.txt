@@ -1,0 +1,13 @@
+game.Players.LocalPlayer.Character.Health:Destroy()
+local ya = getrawmetatable(game)
+local mum = ya.__namecall
+setreadonly(ya, false)
+ya.__namecall = newcclosure(function(name, ...)
+    local tabs = {...}
+    if getnamecallmethod() == "FireServer"  and tostring(name) == "Damage" then
+        tabs[1]["Damage"]=8675309
+    end
+    return mum(name, unpack(tabs))
+end)
+
+setreadonly(ya, true)

