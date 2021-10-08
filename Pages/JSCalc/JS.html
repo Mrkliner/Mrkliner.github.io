@@ -40,7 +40,15 @@
         type = 1;
       }
       function result() {
-        res = B + A;
+        if (type == 0) {
+          res = B + A;
+        }
+        if (type == 1) {
+          res = B * A;
+        }
+        if (type == 2) {
+          res = B / A;
+        }
         console.log ("Результат: " + res);
         document.write ('<p>   </p>');
         document.write ('<form>');
