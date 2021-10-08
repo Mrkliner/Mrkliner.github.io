@@ -1,3 +1,3 @@
 <script>
-  document.write("<p>Summ: <p>")
+  let d = 1;
 </script>
