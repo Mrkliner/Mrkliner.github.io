@@ -24,7 +24,15 @@
           }
         }
         else {
-          A = A + value
+          if (type == 0) {
+            A = A + value;
+          }
+          if (type == 1) {
+            A = A * value;
+          }
+          if (type == 2) {
+            A = A / value;
+          }
         }
       }
       function mult() {
