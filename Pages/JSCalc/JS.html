@@ -1,6 +1,10 @@
 <html>  
   <head><title>JavaScript calculator</title></head>
   <body>
+    <h3>Советуем перезагрузить странницу после того как вы посчитали.</h3>
+    <p></p>
+    <h4 id="IntA">Число A: </h4>
+    <h4 id="IntB">Число B: </h4>
     <script>
       let A = '';
       let B = '';
@@ -14,9 +18,11 @@
       function Sumirov(value) {
         if (APressed == 1) {
            B = B + value;
+           document.getElementById ('IntB')..innerHTML="Число B: " + B;
         }
         else {
           A = A + value;
+          document.getElementById ('IntA')..innerHTML="Число A: " + A;
         }
       }
       function mult() {
@@ -60,7 +66,6 @@
       }
       console.log ("Дебильный веб-калькулятор 1.0");
       document.write ('<form>');
-      document.write ('<h3>Советуем перезагрузить странницу после того как вы посчитали.</h3>');
       document.write ('<p><input type="button" value="1" onclick="Sumirov(\'1\')">');
       document.write ('<input type="button" value="2" onclick="Sumirov(\'2\')">');
       document.write ('<input type="button" value="3" onclick="Sumirov(\'3\')"></p>');
