@@ -17,12 +17,17 @@
           A + value
         }
       }
+      function result() {
+        res = B + A;
+        document.write ('<h3>Результат: ' + res + '</h3>');
+      }
       console.log ("Дебильный веб-калькулятор 1.0");
       document.write ('<form>');
       document.write ('<p><input type="button" value="1" onclick="Sumirov(1)"></p>');
-      document.write ('<button>2</button>');
-      document.write ('<button>3</button>');
-      document.write ('<button>+</button>');
+      document.write ('<p><input type="button" value="2" onclick="Sumirov(2)"></p>');
+      document.write ('<p><input type="button" value="3" onclick="Sumirov(3)"></p>');
+      document.write ('<p><input type="button" value="+" onclick="plus()"></p>');
+      document.write ('<p><input type="button" value="Enter" onclick="result()"></p>');
       document.write ('</form>');
     </script>
   </body>
