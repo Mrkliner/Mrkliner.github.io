@@ -1,21 +1,35 @@
 <html>  
-  <head></head>
+  <head><title>JavaScript calculator</title></head>
   <body>
     <script>
       let A = 0;
       let B = 0;
+      let type = 0;
       let APressed = 0;
       let res;
       function plus() {
         APressed = 1;
+        type = 0;
       }
       function Sumirov(value) {
         if (APressed == 1) {
-          B = B + value;
+          if (type == 0) {
+            B = B + value;
+          }
+          if (type == 1) {
+            B = B * value;
+          }
+          if (type == 2) {
+            B = B / value;
+          }
         }
         else {
           A = A + value
         }
+      }
+      function mult() {
+        APressed = 1;
+        type = 1;
       }
       function result() {
         res = B + A;
@@ -36,7 +50,7 @@
         
         document.write ('<p><input type="button" value="     10     " onclick="Sumirov(10)"></p>');
         
-        document.write ('<p><input type="button" value="+" onclick="plus()"></p>');
+        document.write ('<p><input type="button" value="+" onclick="plus()"><input type="button" value="*" onclick="mult()"></p>');
         document.write ('<p><input type="button" value="Enter" onclick="result()"></p>');
         document.write ('</form>');
         document.write ('<h3>Результат: ' + res + '</h3>');
@@ -58,7 +72,7 @@
       document.write ('<input type="button" value="9" onclick="Sumirov(9)"></p>');
         
       document.write ('<p><input type="button" value="     10     " onclick="Sumirov(10)"></p>');
-      document.write ('<p><input type="button" value="+" onclick="plus()"></p>');
+      document.write ('<p><input type="button" value="+" onclick="plus()"><input type="button" value="*" onclick="mult()"></p>');
       document.write ('<p><input type="button" value="Enter" onclick="result()"></p>');
       document.write ('</form>');
     </script>
