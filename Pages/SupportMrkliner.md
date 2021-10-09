@@ -24,6 +24,6 @@
 <hr>
 <h2>---Полезные ссылки---</h2>
 <h4><a href="https://mrkliner.github.io/Blog/privat_polici">политикa конфедициальности</a></h4>
-<a href="https://mrkliner.github.io/HowBlog">Как создать блог на нашей платформе (вместе с правилами)</a></h4>
+<h4><a href="https://mrkliner.github.io/HowBlog">Как создать блог на нашей платформе (вместе с правилами)</a></h4>
 <h4><a href="https://mrkliner.github.io/Pages/Programs/HTML_Creator.exe">Создатель HTML (копирует в буфер обмена постоянно)</a></h4>
 <hr>
