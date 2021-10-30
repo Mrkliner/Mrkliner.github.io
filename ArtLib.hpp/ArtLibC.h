@@ -8,6 +8,8 @@
 #define B_OK 'k'
 #define B_OK_B_CANCLE 'c'
 #define B_YES_B_NO 'y'
+#define EQUALS 'e'
+#define NOT_EQUALS 'n'
 /*
 	Information: Use the command in your compiler -std=c99 or -std=gnu99
 */
@@ -16,6 +18,9 @@ typedef short shortint;
 typedef int integer;
 typedef long longont;
 typedef float Float;
+typedef struct Str {
+	char text[] = "";
+} CString;
 typedef char BOOLEAN_C;
 typedef char Mbuttons;
 /**/
@@ -101,5 +106,20 @@ int MBoxW (char Caption[], char Text[], Mbuttons Button)
 	if (Button == B_YES_B_NO)
 	{
 		MessageBox (0, Text, Caption, MB_YESNO | MB_ICONWARNING);
+	}
+}
+int MBoxE (char Caption[], char Text[], MButtons Button)
+{
+	if (Button == B_OK)
+	{
+		MessageBox (0, Text, Caption, MB_OK | MB_ICONERROR);
+	}
+	if (Button == B_OK_B_CANCLE)
+	{
+		MessageBox (0, Text, Caption, MB_OKCANCEL | MB_ICONERROR);
+	}
+	if (Button == B_YES_B_NO)
+	{
+		MessageBox (0, Text, Caption, MB_YESNO | MB_ICONERROR);
 	}
 }
