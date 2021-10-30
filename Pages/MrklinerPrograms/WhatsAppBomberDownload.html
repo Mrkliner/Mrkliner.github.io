@@ -15,12 +15,16 @@
       font-size: 45px;
     }
     input {
-	    border-top-left-radius: 10px; 
-    	    border-top-right-radius: 10px;
-	    border-bottom-left-radius: 10px; 
-    	    border-bottom-right-radius: 10px; 
+	    border-top-left-radius: 30px; 
+    	    border-top-right-radius: 30px;
+	    border-bottom-left-radius: 30px; 
+    	    border-bottom-right-radius: 30px; 
 	    font-size: 45px;
     }
+    h3 {
+	    margin-left: 75px
+	    color: #fa7d07ee;
+   }
   </style>
 </head>
 <body>
@@ -30,7 +34,15 @@
     {
       location="https://mrkliner.github.io/Pages/Programs/WhatsAppBober.vbs";
     }
+    function Info() 
+    {
+	    let p = document.createElement('p');
+	    p.innerHTML = '<h2 style="margin-left: 55px; color: #fa7d07ee;">Описание<h2><p></p><h3>Вы сможете спамить в ватсап вашим недругам или людям над которыми вы хотите пошутить. Спамит она быстро, но используйте её с осторожностью!</h3><p></p>';
+	    document.body.append(p);
+    }
   </script>
-  <p><input type="button" value="Скачать" onclick="Link()"></body></p>
+  <p><input type="button" value="Скачать" onclick="Link()"></p>
+  <p></p>
+  <p><input type="button" value="Информация" onclick="Info()"></p>
 </body>
 </html>
