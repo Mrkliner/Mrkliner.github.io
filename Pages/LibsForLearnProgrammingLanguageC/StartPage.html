@@ -14,10 +14,12 @@
       }
       .h-1-1 {
         text-align: center;
+        font-size: 25px;
         color: #ed2626;
       }
       .h-3-1 {
         color: #d9932b;
+        font-size: 25px;
         margin-rigth: 55px;
       }
       .t-1 {
@@ -81,20 +83,26 @@
       <hr>
       <script>
         function gotoUri(url) {
-          location=url
+          location=url;
+        }
+        function Close() {
+          location="https://mrkliner.github.io/Pages/LibsForLearnProgrammingLanguageC/StartPage";
         }
         function Info() {
-          var element = document.querySelector('.inf')
-          element.innerHTML = '<h3 class="h-3-1">В этой литературе '
+          var element = document.querySelector('.inf');
+          element.innerHTML = '<h3 class="h-3-1">В этой литературе вам расскажут о том - какие операторы и функции присутствуют в данном ЯП(языке программирования), как их использовать и из каких библиотек они импортируются. Совет от автора статьи (создателя mrkliner.github.io): советую вам лично её почитать! В ней расскажут о языке програмиирования С в целом. Прчичём для компилятора MinGW(gcc) который идёт под слабые компьютеры, под Linux, под MAC</h3>' + 
+            '<input type="button" value="Скрыть" onclick="Close()">';
         }
       </script>
       <br>
-      <p><input type="button" value="Читать pdf файл (1)" onclick="gotoUri('https://mrkliner.github.io/Pages/LibsForLearnProgrammingLanguageC/devcpp_1.pdf')"><br><br>
-      <input type="button" value="Читать pdf файл (2)" onclick="gotoUri('https://mrkliner.github.io/Pages/LibsForLearnProgrammingLanguageC/devcpp_2.pdf')"><br><br>
-      <input type="button" value="Читать pdf файл (3)" onclick="gotoUri('https://mrkliner.github.io/Pages/LibsForLearnProgrammingLanguageC/devcpp_3.pdf')"><br><br>
-      <input type="button" value="Читать pdf файл (4)" onclick="gotoUri('https://mrkliner.github.io/Pages/LibsForLearnProgrammingLanguageC/devcpp_4.pdf')"><br><br>
-      <input type="button" value="Информация о литературе" onclick="Info()"><br><br>
-      <div class="inf"></p>
+      <p>
+        <input type="button" value="Читать pdf файл (1)" onclick="gotoUri('https://mrkliner.github.io/Pages/LibsForLearnProgrammingLanguageC/devcpp_1.pdf')"><br><br>
+        <input type="button" value="Читать pdf файл (2)" onclick="gotoUri('https://mrkliner.github.io/Pages/LibsForLearnProgrammingLanguageC/devcpp_2.pdf')"><br><br>
+        <input type="button" value="Читать pdf файл (3)" onclick="gotoUri('https://mrkliner.github.io/Pages/LibsForLearnProgrammingLanguageC/devcpp_3.pdf')"><br><br>
+        <input type="button" value="Читать pdf файл (4)" onclick="gotoUri('https://mrkliner.github.io/Pages/LibsForLearnProgrammingLanguageC/devcpp_4.pdf')"><br><br>
+        <input type="button" value="Информация о литературе" onclick="Info()"><br><br>
+      </p>
+      <div class="inf">
         
       </div>
   </body>
