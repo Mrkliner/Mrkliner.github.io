@@ -27,6 +27,11 @@
       .s-3 {
         color: #f00;
       }
+      button {
+        font-size: 35px;
+        border-rigth: 55px;
+        border-left: 55px;
+      }
     </style>
   </head>
   <body>
@@ -66,5 +71,27 @@
         </tr>
       </table>
       <strong><h3 class="h-3-1">Язык С крут тем, что программы написанные на нём получаются маленькие по размеру и быстро исполняются (работают) на компьютере. Язык С <strong><code>низкоуровневым языком программирования</code></strong> - ято означает, что на нём пишутся программы для любых устройств и даже микроконтроллеров!</h3></strong>
+      <h1 class="h-1-1">Что на нём пишут?</h1>
+      <hr>
+      <strong><h3 class="h-3-1">Операционные системы, приложения под Linux, Winodws, MAC, Программы под микроконтроллеры, игры. <br>И всё перечисленное выше буде очень быстро исполняться!</h3></strong>
+      <hr>
+      <script>
+        function gotoUri(url) {
+          location=url
+        }
+        function Info() {
+          var element = document.querySelector('.inf')
+          element.innerHTML = '<h3 class="h-3-1">В этой литературе '
+        }
+      </script>
+      <br>
+      <button onclick="gotoUri(/Pages/LibsForLearnProgrammingLanguageC/devcpp_1.pdf)">Читать pdf файл (1)</button>
+      <button onclick="gotoUri(/Pages/LibsForLearnProgrammingLanguageC/devcpp_2.pdf)">Читать pdf файл (2)</button>
+      <button onclick="gotoUri(/Pages/LibsForLearnProgrammingLanguageC/devcpp_3.pdf)">Читать pdf файл (3)</button>
+      <button onclick="gotoUri(/Pages/LibsForLearnProgrammingLanguageC/devcpp_4.pdf)">Читать pdf файл (4)</button>
+      <button onclick="Info()">Информация о литературе</button>
+      <div class="inf">
+        
+      </div>
   </body>
 </html>
