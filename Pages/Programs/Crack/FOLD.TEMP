@@ -36,3 +36,9 @@ END: [
 & END OF TEMPLATE
 & ________________________________________________________________________________
 !^EXT: EXITCODE.GET {} ** END.USE.RET.EXITCODE // FOLDER.USE.RET +** 4,50^! & DIRECTIVE
+!^UPGRADE @@@ UPDATE %^# UPGR_FILES | [
+  ::$UPDATE FOLDER.USE.NAME.GET {}!
+  ::FOLDER.USE.FUNC-S.UPDATE_CHANGES [::::END.USE.RET]!
+]^!
+& END OF UPDATE
+& ____________________________________________________________________________________________________________
