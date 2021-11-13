@@ -5,9 +5,11 @@
     <style>
       h2 {
         font-size: 55px;
+        color: red;
       }
       h3 {
         font-size: 35px;
+        color: orange;
       }
       p {
         text-align: center;
@@ -15,19 +17,37 @@
       body {
         background-color: #665959c6;
       }
+      .command {
+        color: #7a0ecc;
+      }
+      .val {
+        color: red;
+      }
     </style>
   </head>
   <body>
     <script>
-      function password(pass) {
-        if (pass == "123-mine")
+      function clear(param) {
+        let Sdive = document.querySelector('.main-code').innerHTML;
+        let dive = document.querySelector('.main-code');
+        if (param == "Help")
         {
-          let elem = document.getElementById('main-code');
+          dive.innerHTML = "";
+          dive.innerHTML = '<p><h2>Майн-помощь</h2></p><br><h3>Комманды: </h3>' +
+          '<h3><code><span>/</span><span class="command">gamemode </span><span class="val">1</span></code> - Переключает режим игры (0 - выживание, 1 - креатив, 3 - наблюдатель, 2 - режим приключений)</h3><br>' + 
+          '';
         }
       }
     </script>
-    <div id="main-code">
+    <div class="main-code">
       <p><h2>Что такое "майн-новости"</h2></p>
+      <hr>
+      <h3>Майн-новости - это, сайт по новостям в майнкрафт (Minecraft).</h3>
+      <hr>
+      <h2>Menu</h2>
+      <div class='menu'>
+        <p><button onclick="">Майн-помощь</button><br><button></button></p>
+      </div>
     </div>
   </body>
 </html>
