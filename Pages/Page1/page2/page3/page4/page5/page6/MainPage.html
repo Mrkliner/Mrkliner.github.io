@@ -32,11 +32,11 @@
   <body>
     <script>
       function clear(param) {
-        let Sdive = document.querySelector('.main-code').innerHTML;
+        let hdive = document.querySelector('.main-code');
         let dive = document.querySelector('.main-code');
         if (param == 'Help')
         {
-          location='';
+          dive.innerHTML = '<h1></h1>';
         }
       }
     </script>
@@ -45,8 +45,8 @@
       <hr>
       <h3>Майн-новости - это, сайт по новостям в майнкрафт (Minecraft).</h3>
       <hr>
-      <h2>Menu</h2>
       <div class='menu'>
+        <h2>Меню</h2>
         <h5><p><button onclick="clear('Help')">Майн-помощь</button><br><button></button></p></h5>
       </div>
     </div>
