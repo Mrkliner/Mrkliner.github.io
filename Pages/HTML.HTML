@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Парсер</title>
+</head>
+
+<body>
+  <textarea class='d-1'>
+
+  </textarea>
+  <br>
+  <br>
+  <hr>
+  <div>
+  	<input type="text" class="i-1" placeholder="URL для парсинга">
+  </div>
+  <button onclick="loadPhones()">Спарсить</button>
+
+  <script>
+    function loadPhones() {
+      var xhr = new XMLHttpRequest();
+      var url = document.querySelector('.i-1');
+      xhr.open('GET', url.value, false);
+      xhr.send();
+
+      if (xhr.status != 200) {
+        // обработать ошибку
+        alert('Ошибка ' + xhr.status + ': ' + xhr.statusText);
+      } else {
+        // вывести результат
+        var div = document.querySelector('.d-1');
+        div.value = xhr.responseText;
+        alert(xhr.responseText);
+      }
+    }
+  </script>
+
+</body>
+
+</html>
