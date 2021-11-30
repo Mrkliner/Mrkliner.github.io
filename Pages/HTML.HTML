@@ -10,6 +10,7 @@
   <textarea class='d-1'>
 
   </textarea>
+  <h5 class="strs"></h5><br>
   <br>
   <br>
   <hr>
@@ -31,7 +32,10 @@
       } else {
         // вывести результат
         var div = document.querySelector('.d-1');
+        var lenH5 = document.querySelector('.strs');
         div.value = xhr.responseText;
+        lenH5.innerHTML = "Кол-во строк: " + div.value.split('\n').length;
+        
         alert(xhr.responseText);
       }
     }
