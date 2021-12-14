@@ -1,0 +1,21 @@
+BASH: python3 #FOLD CONTAINER 4.0
+[
+  NAME: MyProjects!
+  FILE: TYPE==LIST [
+    FILENAMES: CONTAINER [
+      FCALL: [
+        GET_FILE_NAMES--!
+      ]!
+    ]!
+    FILELIST: CONTAINER [ 
+      FCALL: [
+        GET_FILE_IN_FOLDER |=| FCALL: [
+          GET_COUNT_FILES--!
+        ]!
+    ]!
+  ]!
+  FCALL: NEW STREAM --OF-- CONTAINER: [ 
+    DEFINE: {FC |=| FCALL(STREAM =-= CONTAINER --IN INDEX(1))},
+    DEFINE_FLUSH--!
+  ]!
+]
