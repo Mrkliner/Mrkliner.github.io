@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1638362631 source:h:\opengll\main.c
+	<windows.h>
+	<stdio.h>
+	<time.h>
+	<gl/gl.h>
+	<math.h>
+	"h:\OpenGLL\stb-master\stb_easy_font.h"
+
+1594604766 h:\opengll\stb-master\stb_easy_font.h
+	<stdlib.h>
+	<math.h>
+
