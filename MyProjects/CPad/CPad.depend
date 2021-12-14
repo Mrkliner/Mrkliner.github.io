@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1638705390 source:h:\cpad\main.c
+	<windows.h>
+	<string.h>
+	<stdio.h>
+
