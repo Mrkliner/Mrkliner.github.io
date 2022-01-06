@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title></title>
+	<style type="text/css">
+		.Head {
+			background-color: rgb(100,50,100);
+			position: fixed;
+			width: 100%;
+			height: 100px;
+		}
+		.under-header {
+			width: 100%;
+			height: 100px;
+		}
+		.stadart-text {
+			color: rgb(255,255,255);
+		}
+		.standart-underlined-text {
+			text-decoration: underline;
+			color: rgb(255,255,255);
+		}
+		.standart-centered-text {
+			color: white;
+			text-align: center;
+		}
+		.standart-padded-text {
+			margin-left: 15px;
+			margin-right: 15px;
+			color: white;
+		}
+		button {
+			border-radius: 50px;
+			font-size: 15px;
+		}
+		body {
+			background-color: rgb(50,50,100);
+		}
+	</style>
+</head>
+<body>
+	<script>
+		function inf() {
+			document.querySelector('.start-text').innerHTML = '<h1 class="standart-centered-text">Информация</h1><br><h3 class="standart-padded-text">На этом сайте можно будет скачать простые игрушки созданные самим разработчиком сайта. Эти игры запускаются на любом компьютере, поскольку очень простые и не занимают большого количества памяти на диске. Помимо всего этого у нас есть сайт с нашим ПО. Наши игры нужно установить на ваш ПК. Установщики скачиваются по ссылке загрузки.<br><button onclick="location=\'\'">Назад</button></h3><br>';
+		}
+		function Packman() {
+			document.querySelector('.start-text').innerHTML = '<h3 class="stadart-text"><a href="Downloads/Packman.zip">Скачать</a></h3><br><button onclick="location=\'\'">Назад</button>'
+		}
+		function Fall() {
+			document.querySelector('.start-text').innerHTML = '<h3 class="stadart-text"><a href="Downloads/Falling.zip">Скачать</a></h3><br><button onclick="location=\'\'">Назад</button>'
+		}
+		function Downloads () {
+			document.querySelector('.start-text').innerHTML = '<h1 class="standart-centered-text">Ссылки на скачивание</h1><br><h3 class="standart-padded-text"><a class="standart-underlined-text" style="cursor:pointer" onclick="Packman()">Pack-man</a><br><br><a class="standart-underlined-text" style="cursor:pointer" onclick="Fall()">falling-ball</a></h3><br><button onclick="location=\'\'">Назад</button>'
+		}
+	</script>
+	<header class="Head">
+		<h3 style="text-align: center;"><button onclick="inf()" style="margin-left: 5px">Информация</button><button onclick="Downloads()">Загрузки</button><br><select>
+			<option disabled>Выберите язык (Select language)</option>
+			<option selected value="Русский" onclick="location='ru.html'">Русский</option>
+			<option value="Englesh" onclick="location='en.html'">Englesh</option>
+		</select></h3>
+	</header>
+	<header class="under-header">
+	</header>
+	<div class="start-text">
+		<h1 class="standart-centered-text">Наши игры</h1>
+		<h3 class="standart-underlined-text">Этот сайт посвящён только тому, что на нём размещаются наши игры</h3>
+		<h3 class="standart-padded-text">На нём размещаются помимо наших игр (их всего 2) кряки других.</h3>
+		<h3 class="standart-padded-text">У нашего разработчика есть личный сайт по читам для игр. Переходите на него по ссылке в самом низу этой странницы. Ознакомьтесь ниже с информацией которую следует прочитать для тех, кто хочет отправить нам идею для публикации на сайте.</h3><br><hr><br>
+		<div style="padding: 15px;border-radius: 30px;border-width: 10;border-color: cyan;" class="stadart-text">
+			<h3>
+				Чтобы отправить нам идею вы должны отправить текст той идеи или готовый текст по вашей идеи (можно HTML кодом или PSD макетом).<br>
+				Отправить нам это нужно на почту <span style="color:darkcyan;text-decoration:underline;">agarrismodov@gmail.com</span><br>
+				Пример того как надо отправить нам идею:<br>
+				<span style="font-style: italic;">
+					Здравствуйте! Я Иван Иваныч Иванов хочу предложить вам идею для сайта с играми - Как взламывать игры с помощью olydbg.
+				</span>
+				<br><br><hr><br>
+				Другой способ:
+				<span style="font-style: italic;">
+					Здравствуйте! Я Иван Иваныч Иванов хочупредложить вам готовый текст по идеи для вашего сайта по играм.<br>Текст:<br>Чтобы взламывать игры с помощью olydbg (такая программа) нужно:<br><ul>
+						<li>Сама olydbg</li>
+						<li>Запароленая игра или программа</li>
+						<li>Желание</li>
+					</ul><br>
+					Желательно знать язык ассемблера, но если вы его не знаете то ничего страшного.<br>
+					Насчёт запароленой программы или игры. Вы можете написать прочтое приложение которое запароленно.<br>
+					Если языков программирования вы незнаете - то скачайте программу <span style="text-decoration:underline;">Game Protector</span> Она абсолютно бесплатная.<br>Скачаиваем её, выбираем приложение и нажимаем Protect.<br>
+					Почле всего этого открываем olydbg. И выбираем запароленое приложение уже там. Запускаем приложение которое запаролено и вводим любой пароль. И видим текст к примеру "Invalid Password" открыаем olydbg и нажимаем Ctrl+F, пишем "Invalid Password". У нас появляется окно со строками. Нажимаем F2 выбрав эту сттроку и запускаем уже приложение из olydbg. Пишем любой пароль и видим тоже самое. Обращаемся в olydbg. И видим настоящий пароль, и тот который ввели мы.
+				</span>
+				<br><hr>
+			</h3>
+			<h3 class="standart-padded-text">Обязятельно нужно следовать примеру выше для отправки идеи. Для PSD макета и HTML кода пример отправки будет ниже.</h3>
+			<h1 class="standart-centered-text">PSD и HTML</h1>
+			<br>
+			<div class="stadart-text">
+				<span style="font-style:italic;">
+					<h1>PSD:</h1>
+					<h3 style="margin-left: 45px">
+						Здравствуйте! Я Иван Иваныч Иванов отправляю вам готовый PSD макет для вашего сайта с моей идеей. Ссылка на PSD макет.
+					</h3>
+					<h1>HTML:</h1>
+					<h3 style="margin-left: 45px">
+						Здравствуйте! Я Иван Иваныч Иванов отправляю вам готовый HTML файл для вашего сайта с моей идеей. Ссылка на HTML файл.
+					</h3>
+				</span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
