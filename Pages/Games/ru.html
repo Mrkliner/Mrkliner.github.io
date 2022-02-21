@@ -73,6 +73,19 @@
 		function Downloads () {
 			document.querySelector('.start-text').innerHTML = '<span class="standart-centered-text"><h1 class="standart-centered-text">Ссылки на скачивание</h1><br><h3 class="standart-padded-text"><a class="standart-underlined-text" style="cursor:pointer" onclick="Packman()">Pack-man</a><br><br><a class="standart-underlined-text" style="cursor:pointer" onclick="Fall()">falling-ball</a><br><br><a class="standart-underlined-text" style="cursor:pointer" onclick="Roader()">Roader</a></h3><br><button onclick="location=\'\'">Назад</button></span>';
 		}
+		function customButton(tagname) { 
+			var tag = document.getElementsByTagName(tagname);
+			for (var i = 0; i < tag.length; i++) {
+				tag[i].innerHTML = '<br><button style="display: flex;align-items: center;">' + tag[i].attributes.text.value + '</button>';
+			}
+		}
+		function customText(tagname) {
+			var tag = document.getElementsByTagName(tagname);
+			for (var i = 0; i < tag.length; i++) {
+				tag[i].innerHTML = '<br><h3 class="standart-text">' + tag[i].attributes.text.value + '</h3>'
+			}
+		}
+
 		window.onload = function() {
 			customButton('centred-button');
 		}
