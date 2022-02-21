@@ -58,21 +58,40 @@
 </head>
 <body>
 	<script>
+		var Screen = 0;
 		function inf() {
-			document.querySelector('.start-text').innerHTML = '<h1 class="standart-centered-text">Информация</h1><br><h3 class="standart-padded-text">На этом сайте можно будет скачать простые игрушки созданные самим разработчиком сайта. Эти игры запускаются на любом компьютере, поскольку очень простые и не занимают большого количества памяти на диске. Помимо всего этого у нас есть сайт с нашим ПО. Наши игры нужно установить на ваш ПК. Установщики скачиваются по ссылке загрузки.<br><button onclick="location=\'\'">Назад</button></h3><br>';
+			Screen=2;
+			document.querySelector('.start-text').innerHTML = '<h1 class="standart-centered-text">Информация</h1><br><h3 class="standart-padded-text">На этом сайте можно будет скачать простые игрушки созданные самим разработчиком сайта. Эти игры запускаются на любом компьютере, поскольку очень простые и не занимают большого количества памяти на диске. Помимо всего этого у нас есть сайт с нашим ПО. Наши игры нужно установить на ваш ПК. Установщики скачиваются по ссылке загрузки.<br><button onclick="Back()">Назад</button></h3><br>';
 		}
 		function Packman() {
-			document.querySelector('.start-text').innerHTML = '<h3 class="stadart-text"><a href="Downloads/Packman.zip">Скачать</a></h3><br><button onclick="location=\'\'">Назад</button>'
+			Screen = 4;
+			document.querySelector('.start-text').innerHTML = '<h3 class="stadart-text"><a href="Downloads/Packman.zip">Скачать</a></h3><br><button onclick="Back()">Назад</button>'
 		}
 		function Fall() {
-			document.querySelector('.start-text').innerHTML = '<h3 class="stadart-text"><a href="Downloads/Falling.zip">Скачать</a></h3><br><button onclick="location=\'\'">Назад</button>'
+			Screen = 4;
+			document.querySelector('.start-text').innerHTML = '<h3 class="stadart-text"><a href="Downloads/Falling.zip">Скачать</a></h3><br><button onclick="Back()">Назад</button>'
 		}
 		function Roader() {
-			document.querySelector('.start-text').innerHTML = '<h3 class="stadart-text"><a href="Downloads/Roader.zip">Скачать</a></h3><br><button onclick="location=\'\'">Назад</button>';
+			Screen = 4;
+			document.querySelector('.start-text').innerHTML = '<h3 class="stadart-text"><a href="Downloads/Roader.zip">Скачать</a></h3><br><button onclick="Back()">Назад</button>';
 		}
 		function Downloads () {
-			document.querySelector('.start-text').innerHTML = '<span class="standart-centered-text"><h1 class="standart-centered-text">Ссылки на скачивание</h1><br><h3 class="standart-padded-text"><a class="standart-underlined-text" style="cursor:pointer" onclick="Packman()">Pack-man</a><br><br><a class="standart-underlined-text" style="cursor:pointer" onclick="Fall()">falling-ball</a><br><br><a class="standart-underlined-text" style="cursor:pointer" onclick="Roader()">Roader</a></h3><br><button onclick="location=\'\'">Назад</button></span>';
+			Screen = 3;
+			document.querySelector('.start-text').innerHTML = '<span class="standart-centered-text"><h1 class="standart-centered-text">Ссылки на скачивание</h1><br><h3 class="standart-padded-text"><a class="standart-underlined-text" style="cursor:pointer" onclick="Packman()">Pack-man</a><br><br><a class="standart-underlined-text" style="cursor:pointer" onclick="Fall()">falling-ball</a><br><br><a class="standart-underlined-text" style="cursor:pointer" onclick="Roader()">Roader</a></h3><br><button onclick="Back()">Назад</button></span>';
 		}
+		
+		function Back() {
+			Screen -= 1;
+			if (Screen >= 4) {
+				Screen = 3;
+				Downloads();
+			}
+			if (Screen == 2) {
+				Screen--;
+				location = '';
+			}
+		}
+		
 		function customButton(tagname) { 
 			var tag = document.getElementsByTagName(tagname);
 			for (var i = 0; i < tag.length; i++) {
