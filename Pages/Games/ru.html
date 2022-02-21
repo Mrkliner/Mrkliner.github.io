@@ -72,12 +72,6 @@
 		function Downloads () {
 			document.querySelector('.start-text').innerHTML = '<span class="standart-centered-text"><h1 class="standart-centered-text">Ссылки на скачивание</h1><br><h3 class="standart-padded-text"><a class="standart-underlined-text" style="cursor:pointer" onclick="Packman()">Pack-man</a><br><br><a class="standart-underlined-text" style="cursor:pointer" onclick="Fall()">falling-ball</a><br><br><a class="standart-underlined-text" style="cursor:pointer" onclick="Roader()">Roader</a></h3><br><button onclick="location=\'\'">Назад</button></span>';
 		}
-		window.onload = function() {
-			var tag = document.getElementsByTagName('centred-button');
-			for (var i = 0; i < tag.length; i++) {
-				tag[i].innerHTML = '<br><button style="margin-left:auto;margin-right:auto">' + tag[i].attributes.text.value + '</button>';
-			}
-		}
 	</script>
 	<header class="Head">
 		<h3 style="text-align: center;"><button onclick="inf()" style="margin-left: 5px">Информация</button><button onclick="Downloads()">Загрузки</button><br><select>
@@ -155,7 +149,7 @@
 			<br>
 			<from action="https://megawebdevelopment.000webhostapp.com/EamilerScr.php" method="GET">
 				<span style="text-align:center"><textarea placeholder="Пишете автору здесь" name="Sender"></textarea></span>
-				<span style="text-align:center"><centred-button text="Отправить"></span>
+				<span style="text-align:center"><centred-button text="Отправить" /></span>
 		        </form>
 		</div>
 	</div>
