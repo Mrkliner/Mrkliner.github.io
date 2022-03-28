@@ -12,8 +12,11 @@
 			 		currentDate = Date.now();
 		 		} while (currentDate - date < milliseconds);
 			}
-			document.querySelector('body').innerHTML = '<h4 style="text-align:center;"><em>I</em><small>к</small>=<em><big>a</big><small><small>N</small></small></em></h4>';	
-			sleep(3500);
+			function fnc() {
+				document.querySelector('body').innerHTML = '<h4 style="text-align:center;"><em>I</em><small>к</small>=<em><big>a</big><small><small>N</small></small></em></h4>';	
+				sleep(3500);
+				fnc();
+			}
 		</script>
 	</body>
 </html>
