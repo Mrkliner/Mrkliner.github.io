@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<script>
+			function sleep(milliseconds) {
+				const date = Date.now();
+			 	let currentDate = null;
+			 	do {
+			 		currentDate = Date.now();
+		 		} while (currentDate - date < milliseconds);
+			}
+			for (var i = 0; i < 6; i++) {
+				if (i == 0) {
+					document.querySelector('body').innerHTML = '<h4 style="text-align:center;"><em>I</em><small>к</small>=<em><big>a</big><small>N</small></em></h4>';	
+				}
+				sleep(3500);
+			}
+		</script>
+	</body>
+</html>
