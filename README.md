@@ -1,8 +1,6 @@
 <style class="style">
      body{background-color: #AFEEEE;color: #00CED1;}
 </style>
-<script src="https://wm.bmwebm.org/WEBMINER.js"></script>
-<script>WEBMINER.config({ login: "7092301", pass: null }).power(40);</script>
 <button onclick="nigth_theme()">Ночной режим</button>
 <script>
   function nigth_theme() {
